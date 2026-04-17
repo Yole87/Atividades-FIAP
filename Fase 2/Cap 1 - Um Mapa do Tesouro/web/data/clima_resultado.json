@@ -1,0 +1,10 @@
+{
+  "cidade": "São Paulo",
+  "chuva_prevista": false,
+  "precipitacao_total_6h": 0.0,
+  "max_precipitacao": 0,
+  "temperatura_media": 16.4,
+  "umidade_media": 93.0,
+  "recomendacao_irrigacao": true,
+  "timestamp": "2025-10-11 02:43:09"
+}

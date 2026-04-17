@@ -1,0 +1,6 @@
+# Arquivos e pastas do Python
+__pycache__/
+*.pyc
+
+# Arquivos do editor JetBrains (PyCharm, IntelliJ)
+.idea/

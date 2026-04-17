@@ -1,0 +1,18 @@
+# Ambientes e IDEs
+.vscode/
+.venv/
+.pio/
+
+# Cache e temporários
+__pycache__/
+Thumbs.db
+.DS_Store
+
+# Arquivos grandes e desnecessários
+*.zip
+*.rar
+*.csv
+*.log
+
+# Dados e exportações locais
+/data/

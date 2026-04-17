@@ -1,0 +1,24 @@
+[
+    {
+        "data": "14/10/2025 11:59:25",
+        "potencial_colheita_t": 180000.0,
+        "real_colhido_t": 168000.0,
+        "preco_tonelada_rs": 1500.0,
+        "analise_resultado": {
+            "toneladas_perdidas": 12000.0,
+            "percentual_perda": 6.666666666666667,
+            "prejuizo_financeiro": 18000000.0
+        }
+    },
+    {
+        "data": "14/10/2025 12:09:52",
+        "potencial_colheita_t": 180000.0,
+        "real_colhido_t": 168000.0,
+        "preco_tonelada_rs": 1500.0,
+        "analise_resultado": {
+            "toneladas_perdidas": 12000.0,
+            "percentual_perda": 6.666666666666667,
+            "prejuizo_financeiro": 18000000.0
+        }
+    }
+]

@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmTech Dashboard - Sistema de Irrigação Inteligente</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2E8B57 0%, #228B22 50%, #32CD32 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: #2c5530;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #e8f5e8;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: 2px solid #4caf50;
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            background: #4caf50;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes pulse-border {
+            0% { 
+                border-color: #f44336;
+                box-shadow: 0 0 0 0 rgba(244, 67, 54, 0.7);
+            }
+            50% { 
+                border-color: #ff6b6b;
+                box-shadow: 0 0 0 10px rgba(244, 67, 54, 0);
+            }
+            100% { 
+                border-color: #f44336;
+                box-shadow: 0 0 0 0 rgba(244, 67, 54, 0);
+            }
+        }
+
+        .irrigation-title-inactive {
+            border: 2px solid #f44336;
+            border-radius: 8px;
+            padding: 0.5rem;
+            animation: pulse-border 2s infinite;
+        }
+
+        .status-ligada {
+            color: #4caf50 !important;
+            font-weight: bold;
+        }
+
+        .status-desligada {
+            color: #f44336 !important;
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: #4caf50;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .btn-warning {
+            background: #ff9800;
+            color: white;
+        }
+
+        .btn-warning:hover {
+            background: #e68900;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .card-header h3 {
+            color: #2c5530;
+            font-size: 1.2rem;
+        }
+
+        .card-header h2 {
+            color: #2c5530;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .sensor-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .sensor-item {
+            text-align: center;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+        }
+
+        .sensor-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2c5530;
+        }
+
+        .sensor-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .npk-status {
+            display: flex;
+            justify-content: space-around;
+            margin: 1rem 0;
+        }
+
+        .npk-item {
+            text-align: center;
+            padding: 0.5rem;
+            border-radius: 8px;
+            min-width: 60px;
+        }
+
+        .npk-ok {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .npk-low {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .irrigation-status {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .irrigation-on {
+            background: linear-gradient(135deg, #4caf50, #45a049);
+            color: white;
+        }
+
+        .irrigation-off {
+            background: linear-gradient(135deg, #f44336, #da190b);
+            color: white;
+        }
+
+        .weather-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            background: #e3f2fd;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin: 1rem 0;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4caf50, #45a049);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #2196f3, #1976d2);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .data-table th {
+            background: #f8f9fa;
+            font-weight: bold;
+            color: #2c5530;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+        
+        /* Estilos para Estatísticas */
+        .stats-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .stats-header h4 {
+            margin: 0;
+            color: #2c5530;
+            font-size: 1.1rem;
+        }
+        
+        .stats-update {
+            font-size: 0.8rem;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .stats-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .stats-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .stats-section h5 {
+            margin: 0 0 1rem 0;
+            color: #2c5530;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .stat-value {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2c5530;
+            margin-bottom: 0.3rem;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Classes de Tendência */
+        .trend-up { color: #ff6b35; }
+        .trend-down { color: #4285f4; }
+        .trend-stable { color: #666; }
+        
+        /* Classes NPK */
+        .npk-high { color: #ff6b35; font-weight: bold; }
+        .npk-good { color: #4CAF50; font-weight: bold; }
+        .npk-low { color: #ff9800; font-weight: bold; }
+        .npk-critical { color: #f44336; font-weight: bold; }
+        
+        /* Classes de Qualidade */
+        .quality-excellent { color: #4CAF50; font-weight: bold; }
+        .quality-good { color: #8BC34A; font-weight: bold; }
+        .quality-regular { color: #ff9800; font-weight: bold; }
+        .quality-bad { color: #ff6b35; font-weight: bold; }
+        .quality-critical { color: #f44336; font-weight: bold; }
+        
+        /* Classes de Eficiência */
+        .efficiency-excellent { color: #4CAF50; font-weight: bold; }
+        .efficiency-good { color: #8BC34A; font-weight: bold; }
+        .efficiency-regular { color: #ff9800; font-weight: bold; }
+        .efficiency-poor { color: #f44336; font-weight: bold; }
+        
+        /* Alertas */
+        .alert-count.has-alerts {
+            color: #f44336;
+            font-weight: bold;
+            animation: pulse-alert 2s infinite;
+        }
+        
+        @keyframes pulse-alert {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        
+        .loading.error {
+            color: #f44336;
+        }
+
+        .timestamp {
+            font-size: 0.8rem;
+            color: #888;
+            text-align: right;
+            margin-top: 1rem;
+        }
+
+        /* Animações pulsantes para status do sistema */
+        @keyframes pulse-green {
+            0% {
+                color: #4caf50;
+                text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+            }
+            50% {
+                color: #66bb6a;
+                text-shadow: 0 0 15px rgba(76, 175, 80, 0.8);
+            }
+            100% {
+                color: #4caf50;
+                text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+            }
+        }
+
+        @keyframes pulse-red {
+            0% {
+                color: #f44336;
+                text-shadow: 0 0 5px rgba(244, 67, 54, 0.5);
+            }
+            50% {
+                color: #ef5350;
+                text-shadow: 0 0 15px rgba(244, 67, 54, 0.8);
+            }
+            100% {
+                color: #f44336;
+                text-shadow: 0 0 5px rgba(244, 67, 54, 0.5);
+            }
+        }
+
+        .status-ativo {
+            animation: pulse-green 2s infinite;
+            font-weight: bold;
+        }
+
+        .status-inativo {
+            animation: pulse-red 2s infinite;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding: 0 0.5rem;
+            }
+            
+            .header {
+                padding: 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .controls {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <i class="fas fa-seedling"></i>
+            FarmTech Dashboard - Sistema de Irrigação Inteligente
+        </h1>
+        <div class="header-controls">
+            <button class="btn btn-primary" onclick="atualizarDados()">
+                <i class="fas fa-sync-alt"></i>
+                Atualizar Dados
+            </button>
+            <button class="btn btn-warning" onclick="irrigacaoManual()">
+                <i class="fas fa-tint"></i>
+                Irrigação Manual
+            </button>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span id="status-text">Sistema Online</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 1. Sensores de Irrigação e Níveis NPK -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-thermometer-half"></i>
+                <h3>Sensores de Irrigação e Níveis NPK</h3>
+            </div>
+            <!-- Sensores de Irrigação -->
+            <div class="section-title">
+                <h4><i class="fas fa-microchip"></i> Sensores de Irrigação</h4>
+            </div>
+            <div class="sensor-grid">
+                <div class="sensor-item">
+                    <div class="sensor-value" id="umidade-solo">--%</div>
+                    <div class="sensor-label">Umidade do Solo</div>
+                </div>
+                <div class="sensor-item">
+                    <div class="sensor-value" id="ph-solo">--</div>
+                    <div class="sensor-label">pH do Solo</div>
+                </div>
+                <div class="sensor-item">
+                    <div class="sensor-value" id="qualidade-solo">--%</div>
+                    <div class="sensor-label">Qualidade do Solo</div>
+                </div>
+                <div class="sensor-item">
+                    <div class="sensor-value" id="ultima-leitura">--:--</div>
+                    <div class="sensor-label">Última Leitura</div>
+                </div>
+            </div>
+            
+            <!-- Níveis NPK -->
+            <div class="section-title" style="margin-top: 1.5rem;">
+                <h4><i class="fas fa-flask"></i> Níveis NPK (Milho)</h4>
+            </div>
+            <div class="npk-status">
+                <div class="npk-item" id="npk-n">
+                    <strong>N</strong><br>
+                    <span id="n-status">--</span>
+                </div>
+                <div class="npk-item" id="npk-p">
+                    <strong>P</strong><br>
+                    <span id="p-status">--</span>
+                </div>
+                <div class="npk-item" id="npk-k">
+                    <strong>K</strong><br>
+                    <span id="k-status">--</span>
+                </div>
+            </div>
+            <div class="npk-footer">
+                <i class="fas fa-corn"></i> Cultura: Milho | Parâmetros otimizados para produção
+            </div>
+        </div>
+
+        <!-- 2. Sistema de Irrigação Inteligente -->
+        <div class="card">
+            <div class="card-header">
+                <h2><i class="fas fa-tint"></i> Sistema de Irrigação Inteligente</h2>
+            </div>
+            <div class="card-body">
+                <div class="status-card sistema-ativo">
+                    <div class="status-content">
+                        <h3>SISTEMA ATIVO</h3>
+                        <p>Aguardando condições ideais</p>
+                    </div>
+                </div>
+                
+                <div class="irrigation-details margin-top">
+                    <div class="detail-item">
+                        <span class="label">Bomba d'água:</span>
+                        <span class="value status-desligada">DESLIGADA</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Última irrigação:</span>
+                        <span class="value" id="ultima-irrigacao">Há 2h 15min</span>
+                    </div>
+                </div>
+                
+                <!-- Justificativa Técnica -->
+                <div id="justificativa-container" class="justificativa-card" style="display: none;">
+                    <div class="justificativa-header">
+                        <i class="fas fa-info-circle"></i>
+                        <h4>Justificativa Técnica</h4>
+                    </div>
+                    <div id="justificativa-content">
+                        <p id="justificativa-decisao">--</p>
+                        <p id="justificativa-explicacao">--</p>
+                        <div id="justificativa-parametros">
+                            <strong>Parâmetros analisados:</strong>
+                            <ul id="parametros-lista"></ul>
+                        </div>
+                        <div id="justificativa-recomendacoes">
+                            <strong>Recomendações:</strong>
+                            <ul id="recomendacoes-lista"></ul>
+                        </div>
+                        <div class="justificativa-footer">
+                            <span>Confiabilidade: <span id="justificativa-confiabilidade">--%</span></span>
+                            <span>Atualizado: <span id="justificativa-timestamp">--</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Condições Meteorológicas -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-cloud-sun"></i>
+                <h3>Condições Meteorológicas</h3>
+            </div>
+            <div class="weather-info">
+                <div class="weather-current">
+                    <h4 id="cidade-atual">Carregando...</h4>
+                    <p id="cenario-atual" style="font-size: 0.9em; color: #666; margin: 5px 0;">Cenário: --</p>
+                    <p id="temp-atual">--°C</p>
+                    <p id="umidade-atual">Umidade: --%</p>
+                </div>
+                <div class="weather-details">
+                    <p id="previsao-chuva">--</p>
+                    <p id="vento-atual">Vento: -- km/h</p>
+                    <p id="pressao-atual">Pressão: -- hPa</p>
+                </div>
+            </div>
+            <div id="recomendacao-irrigacao" class="weather-recommendation">
+                <strong><i class="fas fa-lightbulb"></i> Recomendação:</strong> 
+                <span id="recomendacao-text">Carregando...</span>
+            </div>
+        </div>
+
+
+
+        <!-- 5. Análise de Dados -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Análise Estatística</h3>
+            </div>
+            <div id="analise-stats">
+                <div class="loading">Carregando dados...</div>
+            </div>
+        </div>
+
+        <!-- 6. Gráfico Histórico -->
+        <div class="card chart-card">
+            <div class="card-header">
+                <i class="fas fa-chart-line"></i>
+                <h3>Histórico (24h)</h3>
+            </div>
+            <div class="chart-container">
+                <canvas id="historico-chart"></canvas>
+            </div>
+        </div>
+
+        <!-- 8. Controles do Sistema -->
+        <div class="card controls-card">
+            <div class="card-header">
+                <i class="fas fa-cogs"></i>
+                <h3>Controles do Sistema</h3>
+            </div>
+            <div class="controls">
+                <button class="btn btn-primary" onclick="atualizarDados()">
+                    <i class="fas fa-sync-alt"></i>
+                    Atualizar Dados
+                </button>
+                <button class="btn btn-secondary" onclick="window.open('/wokwi', '_blank')">
+                    <i class="fas fa-microchip"></i>
+                    Simulador Wokwi
+                </button>
+                <button class="btn btn-success" onclick="toggleJustificativa()">
+                    <i class="fas fa-info-circle"></i>
+                    Ver Justificativa
+                </button>
+                <button class="btn btn-secondary" onclick="exportarDados()">
+                    <i class="fas fa-download"></i>
+                    Exportar Dados
+                </button>
+            </div>
+            <div class="timestamp" id="last-update">
+                Última atualização: --
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let historicoChart;
+        let dadosAtuais = {};
+
+        // Inicializar dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            carregarDados();
+            inicializarGrafico();
+            
+            // Atualizar dados a cada 30 segundos
+            setInterval(carregarDados, 30000);
+        });
+
+        async function carregarDados() {
+            try {
+                const response = await fetch('/api/dados');
+                const dados = await response.json();
+                
+                if (dados.sucesso) {
+                    atualizarInterface(dados.dados);
+                    document.getElementById('status-text').textContent = 'Sistema Online';
+                } else {
+                    console.error('Erro nos dados:', dados.erro);
+                    document.getElementById('status-text').textContent = 'Erro nos Dados';
+                }
+                
+            } catch (error) {
+                console.error('Erro ao carregar dados:', error);
+                document.getElementById('status-text').textContent = 'Erro de Conexão';
+            }
+        }
+
+        async function atualizarDados() {
+            const btn = event.target;
+            const originalText = btn.innerHTML;
+            
+            try {
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Atualizando...';
+                btn.disabled = true;
+                
+                const response = await fetch('/api/atualizar');
+                const resultado = await response.json();
+                
+                console.log('Resposta da API:', resultado); // Debug
+                
+                if (resultado.sucesso) {
+                    // Verificar se todos os scripts executaram com sucesso
+                    const todosComSucesso = Object.values(resultado.resultados).every(r => r.sucesso);
+                    
+                    if (todosComSucesso) {
+                        // Recarregar dados após atualização
+                        await carregarDados();
+                        
+                        // Mostrar feedback de sucesso
+                        btn.innerHTML = '<i class="fas fa-check"></i> Atualizado!';
+                        btn.style.background = '#4caf50';
+                    } else {
+                        // Alguns scripts falharam, mas ainda recarregar dados
+                        await carregarDados();
+                        
+                        btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Parcial';
+                        btn.style.background = '#ff9800';
+                    }
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.style.background = '';
+                        btn.disabled = false;
+                    }, 2000);
+                } else {
+                    throw new Error(resultado.erro || 'Erro na atualização');
+                }
+                
+            } catch (error) {
+                console.error('Erro ao atualizar dados:', error);
+                btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Erro';
+                btn.style.background = '#f44336';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 3000);
+            }
+        }
+
+        async function irrigacaoManual() {
+            const btn = event.target;
+            const originalText = btn.innerHTML;
+            
+            try {
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Ativando...';
+                btn.disabled = true;
+                
+                const response = await fetch('/api/irrigacao/manual', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                const resultado = await response.json();
+                
+                if (resultado.sucesso) {
+                    btn.innerHTML = '<i class="fas fa-check"></i> Ativada!';
+                    btn.style.background = '#4caf50';
+                    
+                    // Atualizar dados para mostrar status da irrigação
+                    setTimeout(async () => {
+                        await carregarDados();
+                        btn.innerHTML = originalText;
+                        btn.style.background = '';
+                        btn.disabled = false;
+                    }, 2000);
+                } else {
+                    throw new Error(resultado.erro || 'Erro na irrigação manual');
+                }
+                
+            } catch (error) {
+                console.error('Erro na irrigação manual:', error);
+                btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Erro';
+                btn.style.background = '#f44336';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 3000);
+            }
+        }
+
+        function toggleJustificativa() {
+            const container = document.getElementById('justificativa-container');
+            if (container.style.display === 'none') {
+                container.style.display = 'block';
+            } else {
+                container.style.display = 'none';
+            }
+        }
+
+        function atualizarNPK(elemento, status) {
+            const npkElement = document.getElementById(`npk-${elemento}`);
+            const statusElement = document.getElementById(`${elemento}-status`);
+            
+            if (status) {
+                npkElement.className = 'npk-item npk-ok';
+                statusElement.textContent = 'OK';
+            } else {
+                npkElement.className = 'npk-item npk-low';
+                statusElement.textContent = 'BAIXO';
+            }
+        }
+
+        function atualizarInterface(dados) {
+            // Dados dos sensores de irrigação
+            const sensores = dados.sensores || {};
+            
+            document.getElementById('umidade-solo').textContent = 
+                sensores.umidade_solo ? `${sensores.umidade_solo}%` : '--';
+            document.getElementById('ph-solo').textContent = 
+                sensores.ph_solo ? sensores.ph_solo.toFixed(1) : '--';
+            document.getElementById('qualidade-solo').textContent = 
+                sensores.qualidade_solo ? `${sensores.qualidade_solo}%` : '--';
+            
+            // Timestamp da última leitura
+            if (sensores.timestamp) {
+                const timestamp = new Date(sensores.timestamp);
+                document.getElementById('ultima-leitura').textContent = 
+                    timestamp.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+            }
+
+            // NPK Status
+            const npk = sensores.npk || {};
+            atualizarNPK('n', npk.nitrogenio);
+            atualizarNPK('p', npk.fosforo);
+            atualizarNPK('k', npk.potassio);
+
+            // Status da irrigação
+            const irrigationStatus = document.querySelector('.status-card');
+            const irrigationText = document.querySelector('.status-content h3');
+            const irrigationReason = document.querySelector('.status-content p');
+            const bombaStatus = document.querySelector('.irrigation-details .value');
+            const ultimaIrrigacao = document.getElementById('ultima-irrigacao');
+            const motivoTexto = document.querySelector('.status-content p');
+            const irrigationTitle = document.querySelector('h2:has(.fa-tint)');
+            
+            // Determinar status baseado na irrigação ativa dos sensores
+            let statusAtivo = false;
+            let motivoStatus = 'Aguardando dados do sistema...';
+            
+            // Primeiro, verificar se há dados de sensores com irrigacao_ativa
+            if (dados.sensores && dados.sensores.irrigacao_ativa !== undefined) {
+                statusAtivo = dados.sensores.irrigacao_ativa;
+                if (statusAtivo) {
+                    motivoStatus = 'Sistema ativado - Irrigação em andamento';
+                } else {
+                    motivoStatus = 'Sistema inativo - Aguardando condições ideais';
+                }
+            }
+            
+            // Se há justificativa técnica, usar ela para complementar
+            if (dados.justificativa_tecnica) {
+                const decisao = dados.justificativa_tecnica.decisao;
+                const motivo_principal = dados.justificativa_tecnica.motivo_principal;
+                const titulo = dados.justificativa_tecnica.titulo;
+                
+                if (decisao === 'ATIVAR' || decisao === 'MANTER') {
+                    statusAtivo = true;
+                    if (decisao === 'ATIVAR') {
+                        motivoStatus = `Sistema ativado devido a: ${motivo_principal}. ${titulo}`;
+                    } else {
+                        motivoStatus = `Sistema mantido ativo: ${motivo_principal}. ${titulo}`;
+                    }
+                } else if (decisao === 'DESATIVAR') {
+                    statusAtivo = false;
+                    motivoStatus = `Sistema desativado devido a: ${motivo_principal}. ${titulo}`;
+                }
+            }
+            
+            if (statusAtivo) {
+                if (irrigationStatus) {
+                    irrigationStatus.className = 'status-card sistema-ativo';
+                }
+                if (irrigationText) {
+                    irrigationText.textContent = 'SISTEMA ATIVO';
+                    irrigationText.className = 'status-ativo';
+                }
+                if (irrigationReason) {
+                    irrigationReason.textContent = 'Irrigação em andamento';
+                }
+                if (bombaStatus) {
+                    bombaStatus.textContent = 'LIGADA';
+                    bombaStatus.className = 'value status-ligada';
+                }
+                // Remover animação do título quando ativo
+                if (irrigationTitle) {
+                    irrigationTitle.classList.remove('irrigation-title-inactive');
+                }
+            } else {
+                if (irrigationStatus) {
+                    irrigationStatus.className = 'status-card sistema-inativo';
+                }
+                if (irrigationText) {
+                    irrigationText.textContent = 'SISTEMA INATIVO';
+                    irrigationText.className = 'status-inativo';
+                }
+                if (irrigationReason) {
+                    irrigationReason.textContent = 'Aguardando condições ideais';
+                }
+                if (bombaStatus) {
+                    bombaStatus.textContent = 'DESLIGADA';
+                    bombaStatus.className = 'value status-desligada';
+                }
+                // Adicionar animação do título quando inativo
+                if (irrigationTitle) {
+                    irrigationTitle.classList.add('irrigation-title-inactive');
+                }
+            }
+            
+            // Atualizar descrição do motivo
+            if (motivoTexto) {
+                motivoTexto.textContent = motivoStatus;
+            }
+            
+            if (ultimaIrrigacao) {
+                // Usar o valor real da última irrigação dos dados dos sensores
+                ultimaIrrigacao.textContent = sensores.ultima_irrigacao || 'Nunca';
+            }
+
+            // Justificativa Técnica
+            atualizarJustificativaTecnica(dados.justificativa_tecnica);
+
+            // Dados meteorológicos
+            const meteorologia = dados.meteorologia;
+            if (meteorologia) {
+                const atual = meteorologia.atual || {};
+                const recomendacao = meteorologia.recomendacao || {};
+                const cenarioInfo = meteorologia.cenario_info || {};
+                
+                document.getElementById('cidade-atual').textContent = 
+                    atual.cidade || 'Localização Simulada';
+                document.getElementById('cenario-atual').textContent = 
+                    cenarioInfo.nome ? `Cenário: ${cenarioInfo.nome}` : 'Cenário: --';
+                document.getElementById('temp-atual').textContent = 
+                    atual.temperatura ? `${atual.temperatura}°C` : '--°C';
+                document.getElementById('umidade-atual').textContent = 
+                    atual.umidade ? `Umidade: ${atual.umidade}%` : 'Umidade: --%';
+                document.getElementById('vento-atual').textContent = 
+                    atual.vento ? `Vento: ${atual.vento} km/h` : 'Vento: -- km/h';
+                document.getElementById('pressao-atual').textContent = 
+                    atual.pressao ? `Pressão: ${atual.pressao} hPa` : 'Pressão: -- hPa';
+                
+                // Previsão de chuva
+                const previsaoChuva = document.getElementById('previsao-chuva');
+                if (recomendacao.chuva_prevista) {
+                    previsaoChuva.textContent = `☔ Chuva prevista: ${recomendacao.precipitacao_24h || 0}mm`;
+                    previsaoChuva.style.color = '#2196f3';
+                } else {
+                    previsaoChuva.textContent = '☀️ Sem chuva prevista';
+                    previsaoChuva.style.color = '#ff9800';
+                }
+                
+                // Recomendação de irrigação
+                const recomendacaoElement = document.getElementById('recomendacao-irrigacao');
+                const recomendacaoText = document.getElementById('recomendacao-text');
+                
+                if (recomendacao.irrigar) {
+                    recomendacaoElement.style.background = '#d4edda';
+                    recomendacaoElement.style.color = '#155724';
+                    recomendacaoElement.style.border = '1px solid #c3e6cb';
+                    recomendacaoText.textContent = recomendacao.motivo || 'Irrigação recomendada';
+                } else {
+                    recomendacaoElement.style.background = '#f8d7da';
+                    recomendacaoElement.style.color = '#721c24';
+                    recomendacaoElement.style.border = '1px solid #f5c6cb';
+                    recomendacaoText.textContent = recomendacao.motivo || 'Irrigação não necessária';
+                }
+            }
+            
+            // Atualizar análise
+            atualizarAnalise(dados.analise);
+        }
+
+        function atualizarAnalise(analise) {
+            const container = document.getElementById('analise-stats');
+            
+            // Buscar estatísticas do novo sistema
+            fetch('/api/estatisticas')
+                .then(response => response.json())
+                .then(stats => {
+                    if (!stats || Object.keys(stats).length === 0) {
+                        container.innerHTML = '<div class="loading">Coletando dados estatísticos...</div>';
+                        return;
+                    }
+                    
+                    container.innerHTML = `
+                        <div class="stats-header">
+                            <h4><i class="fas fa-chart-bar"></i> Estatísticas do Sistema (${stats.periodo || '24h'})</h4>
+                            <span class="stats-update">Atualizado: ${stats.ultima_atualizacao || 'Aguardando...'}</span>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <!-- Sensores Principais -->
+                            <div class="stats-section">
+                                <h5><i class="fas fa-tint"></i> Umidade do Solo</h5>
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.sensores?.umidade_solo?.atual?.toFixed(1) || '--'}%</span>
+                                        <span class="stat-label">Atual</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.sensores?.umidade_solo?.media?.toFixed(1) || '--'}%</span>
+                                        <span class="stat-label">Média</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-trend ${getTrendClass(stats.sensores?.umidade_solo?.tendencia)}">${getTrendIcon(stats.sensores?.umidade_solo?.tendencia)} ${stats.sensores?.umidade_solo?.tendencia || 'estável'}</span>
+                                        <span class="stat-label">Tendência</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Temperatura -->
+                            <div class="stats-section">
+                                <h5><i class="fas fa-thermometer-half"></i> Temperatura</h5>
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.sensores?.temperatura?.atual?.toFixed(1) || '--'}°C</span>
+                                        <span class="stat-label">Atual</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.sensores?.temperatura?.minima?.toFixed(1) || '--'}°C / ${stats.sensores?.temperatura?.maxima?.toFixed(1) || '--'}°C</span>
+                                        <span class="stat-label">Min/Max</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-trend ${getTrendClass(stats.sensores?.temperatura?.tendencia)}">${getTrendIcon(stats.sensores?.temperatura?.tendencia)} ${stats.sensores?.temperatura?.tendencia || 'estável'}</span>
+                                        <span class="stat-label">Tendência</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- pH do Solo -->
+                            <div class="stats-section">
+                                <h5><i class="fas fa-flask"></i> pH do Solo</h5>
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.sensores?.ph_solo?.atual?.toFixed(1) || '--'}</span>
+                                        <span class="stat-label">Atual</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.sensores?.ph_solo?.media?.toFixed(1) || '--'}</span>
+                                        <span class="stat-label">Média</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-trend ${getTrendClass(stats.sensores?.ph_solo?.tendencia)}">${getTrendIcon(stats.sensores?.ph_solo?.tendencia)} ${stats.sensores?.ph_solo?.tendencia || 'estável'}</span>
+                                        <span class="stat-label">Tendência</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- NPK Status -->
+                            <div class="stats-section">
+                                <h5><i class="fas fa-seedling"></i> Nutrientes NPK</h5>
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-value npk-status ${getNPKClass(stats.npk?.nitrogenio?.status)}">${stats.npk?.nitrogenio?.atual?.toFixed(0) || '--'} ppm</span>
+                                        <span class="stat-label">Nitrogênio (${stats.npk?.nitrogenio?.status || '--'})</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value npk-status ${getNPKClass(stats.npk?.fosforo?.status)}">${stats.npk?.fosforo?.atual?.toFixed(0) || '--'} ppm</span>
+                                        <span class="stat-label">Fósforo (${stats.npk?.fosforo?.status || '--'})</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value npk-status ${getNPKClass(stats.npk?.potassio?.status)}">${stats.npk?.potassio?.atual?.toFixed(0) || '--'} ppm</span>
+                                        <span class="stat-label">Potássio (${stats.npk?.potassio?.status || '--'})</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Qualidade do Solo -->
+                            <div class="stats-section">
+                                <h5><i class="fas fa-mountain"></i> Qualidade do Solo</h5>
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.sensores?.qualidade_solo?.atual?.toFixed(0) || '--'}%</span>
+                                        <span class="stat-label">Índice Atual</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value quality-status ${getQualityClass(stats.sensores?.qualidade_solo?.classificacao)}">${stats.sensores?.qualidade_solo?.classificacao || '--'}</span>
+                                        <span class="stat-label">Classificação</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.sensores?.qualidade_solo?.media?.toFixed(0) || '--'}%</span>
+                                        <span class="stat-label">Média</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Irrigação -->
+                            <div class="stats-section">
+                                <h5><i class="fas fa-shower"></i> Sistema de Irrigação</h5>
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.irrigacao?.total_ativacoes || 0}</span>
+                                        <span class="stat-label">Ativações</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.irrigacao?.tempo_total_ativo || 0} min</span>
+                                        <span class="stat-label">Tempo Total</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value efficiency-status ${getEfficiencyClass(stats.irrigacao?.eficiencia)}">${stats.irrigacao?.eficiencia?.toFixed(0) || 0}%</span>
+                                        <span class="stat-label">Eficiência</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Alertas -->
+                            <div class="stats-section">
+                                <h5><i class="fas fa-exclamation-triangle"></i> Alertas do Sistema</h5>
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-value alert-count ${stats.alertas_ativos > 0 ? 'has-alerts' : ''}">${stats.alertas_ativos || 0}</span>
+                                        <span class="stat-label">Alertas Ativos</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.total_registros || 0}</span>
+                                        <span class="stat-label">Registros</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">${stats.irrigacao?.ultima_irrigacao || 'Nenhuma'}</span>
+                                        <span class="stat-label">Última Irrigação</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar estatísticas:', error);
+                    container.innerHTML = '<div class="loading error">Erro ao carregar estatísticas</div>';
+                });
+        }
+        
+        // Funções auxiliares para classes CSS
+        function getTrendClass(tendencia) {
+            switch(tendencia) {
+                case 'crescente': return 'trend-up';
+                case 'decrescente': return 'trend-down';
+                default: return 'trend-stable';
+            }
+        }
+        
+        function getTrendIcon(tendencia) {
+            switch(tendencia) {
+                case 'crescente': return '↗';
+                case 'decrescente': return '↘';
+                default: return '→';
+            }
+        }
+        
+        function getNPKClass(status) {
+            switch(status) {
+                case 'Alto': return 'npk-high';
+                case 'Adequado': return 'npk-good';
+                case 'Baixo': return 'npk-low';
+                case 'Crítico': return 'npk-critical';
+                default: return '';
+            }
+        }
+        
+        function getQualityClass(classificacao) {
+            switch(classificacao) {
+                case 'Excelente': return 'quality-excellent';
+                case 'Boa': return 'quality-good';
+                case 'Regular': return 'quality-regular';
+                case 'Ruim': return 'quality-bad';
+                case 'Crítica': return 'quality-critical';
+                default: return '';
+            }
+        }
+        
+        function getEfficiencyClass(eficiencia) {
+            if (eficiencia >= 80) return 'efficiency-excellent';
+            if (eficiencia >= 60) return 'efficiency-good';
+            if (eficiencia >= 40) return 'efficiency-regular';
+            return 'efficiency-poor';
+        }
+
+
+
+        function inicializarGrafico() {
+            const ctx = document.getElementById('historico-chart').getContext('2d');
+            
+            historicoChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [
+                        {
+                            label: 'Umidade (%)',
+                            data: [],
+                            borderColor: '#2196f3',
+                            backgroundColor: 'rgba(33, 150, 243, 0.1)',
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Temperatura (°C)',
+                            data: [],
+                            borderColor: '#ff9800',
+                            backgroundColor: 'rgba(255, 152, 0, 0.1)',
+                            tension: 0.4
+                        },
+                        {
+                            label: 'pH',
+                            data: [],
+                            borderColor: '#4caf50',
+                            backgroundColor: 'rgba(76, 175, 80, 0.1)',
+                            tension: 0.4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        function atualizarJustificativaTecnica(justificativa) {
+            const container = document.getElementById('justificativa-container');
+            
+            if (!justificativa) {
+                container.style.display = 'none';
+                return;
+            }
+            
+            // Mostrar o container
+            container.style.display = 'block';
+            
+            // Atualizar cor do container baseado na decisão
+            const decisao = justificativa.decisao?.acao?.toLowerCase();
+            if (decisao === 'ativar' || decisao === 'manter') {
+                container.style.background = '#e8f5e8';
+                container.style.borderLeftColor = '#4caf50';
+            } else if (decisao === 'desativar') {
+                container.style.background = '#fff3e0';
+                container.style.borderLeftColor = '#ff9800';
+            } else {
+                container.style.background = '#e3f2fd';
+                container.style.borderLeftColor = '#2196f3';
+            }
+            
+            // Atualizar conteúdo
+            document.getElementById('justificativa-decisao').textContent = 
+                justificativa.justificativa?.titulo || justificativa.decisao?.acao || '--';
+            document.getElementById('justificativa-explicacao').textContent = 
+                justificativa.justificativa?.explicacao_tecnica || '--';
+            
+            // Atualizar lista de parâmetros
+            const parametrosList = document.getElementById('parametros-lista');
+            parametrosList.innerHTML = '';
+            if (justificativa.parametros_analisados && Array.isArray(justificativa.parametros_analisados)) {
+                justificativa.parametros_analisados.forEach(param => {
+                    const li = document.createElement('li');
+                    if (typeof param === 'object' && param.nome) {
+                        li.innerHTML = `<strong>${param.nome}:</strong> ${param.valor} (${param.status})`;
+                    } else {
+                        li.textContent = param;
+                    }
+                    parametrosList.appendChild(li);
+                });
+            } else {
+                const li = document.createElement('li');
+                li.textContent = 'Nenhum parâmetro específico informado';
+                li.style.fontStyle = 'italic';
+                parametrosList.appendChild(li);
+            }
+            
+            // Atualizar lista de recomendações
+            const recomendacoesList = document.getElementById('recomendacoes-lista');
+            recomendacoesList.innerHTML = '';
+            if (justificativa.recomendacoes_adicionais && Array.isArray(justificativa.recomendacoes_adicionais)) {
+                justificativa.recomendacoes_adicionais.forEach(rec => {
+                    const li = document.createElement('li');
+                    li.textContent = rec;
+                    recomendacoesList.appendChild(li);
+                });
+            } else if (justificativa.recomendacoes && justificativa.recomendacoes.length > 0) {
+                justificativa.recomendacoes.forEach(rec => {
+                    const li = document.createElement('li');
+                    li.textContent = rec;
+                    recomendacoesList.appendChild(li);
+                });
+            } else {
+                const li = document.createElement('li');
+                li.textContent = 'Nenhuma recomendação específica';
+                li.style.fontStyle = 'italic';
+                recomendacoesList.appendChild(li);
+            }
+            
+            // Atualizar confiabilidade e timestamp
+            document.getElementById('justificativa-confiabilidade').textContent = 
+                justificativa.confiabilidade?.nivel ? `${justificativa.confiabilidade.nivel}%` : 
+                justificativa.confiabilidade ? `${justificativa.confiabilidade}%` : '--';
+            
+            const timestamp = justificativa.timestamp ? 
+                new Date(justificativa.timestamp).toLocaleString('pt-BR') : 
+                new Date().toLocaleString('pt-BR');
+            document.getElementById('justificativa-timestamp').textContent = timestamp;
+        }
+
+        async function atualizarGrafico() {
+            try {
+                const response = await fetch('/api/historico');
+                const historico = await response.json();
+                
+                // Usar timestamp_grafico para os labels do gráfico (formato HH:MM)
+                historicoChart.data.labels = historico.map(h => h.timestamp_grafico || h.timestamp);
+                historicoChart.data.datasets[0].data = historico.map(h => h.umidade);
+                historicoChart.data.datasets[1].data = historico.map(h => h.temperatura);
+                historicoChart.data.datasets[2].data = historico.map(h => h.ph);
+                
+                historicoChart.update();
+            } catch (error) {
+                console.error('Erro ao atualizar gráfico:', error);
+            }
+        }
+
+        async function atualizarDados() {
+            const btn = event.target;
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Atualizando...';
+            btn.disabled = true;
+            
+            try {
+                const response = await fetch('/api/atualizar');
+                const resultado = await response.json();
+                
+                console.log('Resultado da atualização:', resultado);
+                
+                // Verificar se os scripts foram executados com sucesso
+                const climaOk = resultado.clima && resultado.clima.sucesso;
+                const analiseOk = resultado.analise && resultado.analise.sucesso;
+                
+                if (climaOk && analiseOk) {
+                    await carregarDados();
+                    alert('Dados atualizados com sucesso!');
+                } else {
+                    let mensagemErro = 'Erro ao atualizar dados:\n';
+                    
+                    if (!climaOk) {
+                        mensagemErro += `\n• Clima: ${resultado.clima?.erro || 'Erro desconhecido'}`;
+                        if (resultado.clima?.stderr) {
+                            mensagemErro += `\n  Detalhes: ${resultado.clima.stderr}`;
+                        }
+                    }
+                    
+                    if (!analiseOk) {
+                        mensagemErro += `\n• Análise: ${resultado.analise?.erro || 'Erro desconhecido'}`;
+                        if (resultado.analise?.stderr) {
+                            mensagemErro += `\n  Detalhes: ${resultado.analise.stderr}`;
+                        }
+                    }
+                    
+                    alert(mensagemErro);
+                    console.error('Detalhes dos erros:', resultado);
+                }
+            } catch (error) {
+                console.error('Erro ao atualizar:', error);
+                alert('Erro de conexão ao atualizar dados. Verifique se o servidor está funcionando.');
+            } finally {
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }
+        }
+
+        function exportarDados() {
+            const dataStr = JSON.stringify(dadosAtuais, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(dataBlob);
+            link.download = `farmtech_dados_${new Date().toISOString().split('T')[0]}.json`;
+            link.click();
+        }
+    </script>
+</body>
+</html>

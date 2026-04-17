@@ -1,0 +1,771 @@
+/* FarmTech Web Interface - Estilos Compartilhados */
+
+:root {
+    --primary-color: #4caf50;
+    --primary-dark: #45a049;
+    --secondary-color: #2196f3;
+    --secondary-dark: #1976d2;
+    --accent-color: #ff9800;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --error-color: #f44336;
+    --text-primary: #2c5530;
+    --text-secondary: #666;
+    --background-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --card-background: rgba(255, 255, 255, 0.95);
+    --border-radius: 15px;
+    --box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background-gradient);
+    min-height: 100vh;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Utilitários */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }
+
+/* Layout */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-auto { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+/* Cards */
+.card {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.card-header h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.card-body {
+    padding: 1rem 0;
+}
+
+.card-footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Botões */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
+    color: white;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, var(--success-color), #388e3c);
+    color: white;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, var(--warning-color), #f57c00);
+    color: white;
+}
+
+.btn-error {
+    background: linear-gradient(135deg, var(--error-color), #d32f2f);
+    color: white;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Formulários */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+/* Status e Indicadores */
+.status-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.status-online {
+    background: #e8f5e8;
+    color: #2e7d32;
+    border: 2px solid var(--success-color);
+}
+
+.status-offline {
+    background: #ffebee;
+    color: #c62828;
+    border: 2px solid var(--error-color);
+}
+
+.status-warning {
+    background: #fff3e0;
+    color: #ef6c00;
+    border: 2px solid var(--warning-color);
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.status-dot.online { background: var(--success-color); }
+.status-dot.offline { background: var(--error-color); }
+.status-dot.warning { background: var(--warning-color); }
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Tabelas */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background: #f8f9fa;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.table tbody tr:hover {
+    background: rgba(76, 175, 80, 0.05);
+}
+
+/* Alertas */
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid;
+}
+
+.alert-success {
+    background: #e8f5e8;
+    color: #2e7d32;
+    border-left-color: var(--success-color);
+}
+
+.alert-warning {
+    background: #fff3e0;
+    color: #ef6c00;
+    border-left-color: var(--warning-color);
+}
+
+.alert-error {
+    background: #ffebee;
+    color: #c62828;
+    border-left-color: var(--error-color);
+}
+
+.alert-info {
+    background: #e3f2fd;
+    color: #1565c0;
+    border-left-color: var(--secondary-color);
+}
+
+/* Loading */
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+}
+
+.loading i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Métricas */
+.metric {
+    text-align: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.metric-change {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.metric-change.positive {
+    color: var(--success-color);
+}
+
+.metric-change.negative {
+    color: var(--error-color);
+}
+
+/* Estilos específicos para métricas */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.metric-item {
+    text-align: center;
+}
+
+.metric-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.metric-value {
+    font-size: 1rem;
+}
+
+/* NPK Grid */
+.npk-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.npk-item {
+    text-align: center;
+}
+
+.npk-item h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Weather Grid */
+.weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather-icon {
+    font-size: 3rem;
+    color: var(--warning-color);
+}
+
+.weather-temp .temp {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.weather-temp .humidity {
+    color: var(--text-secondary);
+}
+
+.weather-details p {
+    margin: 0.25rem 0;
+}
+
+.weather-status {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.status-alert {
+    background: rgba(255, 193, 7, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--warning-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.recommendation {
+    background: rgba(40, 167, 69, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--success-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Culturas */
+.culturas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cultura-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cultura-item i {
+    color: var(--success-color);
+    font-size: 1.2rem;
+}
+
+.status-ativo {
+    background: var(--success-color);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-left: auto;
+}
+
+.status-inativo {
+    background: var(--text-secondary);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-left: auto;
+}
+
+/* Layout Principal */
+.main-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Sistema de Irrigação - Card Principal */
+.irrigation-main-card {
+    grid-column: 1 / -1;
+}
+
+.irrigation-main-card .card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 12px 40px rgba(76, 175, 80, 0.15);
+}
+
+/* Motivo da Decisão */
+.motivo-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.1);
+}
+
+.motivo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 8px;
+}
+
+.motivo-header i {
+    color: var(--secondary-color);
+}
+
+.motivo-header strong {
+    color: #1976d2;
+    font-size: 0.95rem;
+}
+
+#motivo-texto {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Informações da Irrigação */
+.irrigation-info {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-item span:last-child {
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+/* Justificativa Técnica */
+.justificativa-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #e8f5e8 0%, #f1f8e9 100%);
+    border-left: 4px solid var(--success-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.1);
+}
+
+.justificativa-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 8px;
+}
+
+.justificativa-header i {
+    color: var(--success-color);
+}
+
+.justificativa-header h4 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.justificativa-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Grid de Sensores */
+.sensors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Card Meteorológico */
+.weather-card {
+    grid-column: 1 / -1;
+}
+
+.weather-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weather-current h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-primary);
+}
+
+.weather-current #temp-atual {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.weather-details {
+    text-align: right;
+}
+
+.weather-details p {
+    margin: 0.25rem 0;
+}
+
+.weather-recommendation {
+    padding: 1rem;
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-radius: 8px;
+    border-left: 4px solid var(--warning-color);
+    margin-top: 1rem;
+}
+
+/* NPK Footer */
+.npk-footer {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Responsividade Melhorada */
+@media (max-width: 1200px) {
+    .main-grid {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .sensors-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .weather-info {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+    
+    .weather-details {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-grid {
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .motivo-card,
+    .irrigation-info,
+    .justificativa-card {
+        padding: 0.75rem;
+    }
+    
+    .weather-current #temp-atual {
+        font-size: 1.5rem;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .motivo-header,
+    .justificativa-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .justificativa-footer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Animações */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}

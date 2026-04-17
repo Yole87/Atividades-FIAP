@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "author": "FarmTech-Fase2",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp32", "top": 100.7, "left": 196.6, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht22_sensor",
+      "top": 48.3,
+      "left": 397.8,
+      "attrs": { "temperature": "25", "humidity": "80" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ph_sensor",
+      "top": 224,
+      "left": 423.2,
+      "attrs": { "lux": "800" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "ph_pulldown",
+      "top": 254.4,
+      "left": 354.65,
+      "rotate": 90,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_nitrogenio",
+      "top": 54.2,
+      "left": 48,
+      "attrs": { "color": "green", "label": "N", "bounce": "0" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_fosforo",
+      "top": 102.2,
+      "left": 48,
+      "attrs": { "color": "green", "label": "P", "bounce": "0" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_potassio",
+      "top": 150.2,
+      "left": 48,
+      "attrs": { "color": "green", "label": "K", "bounce": "0" }
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "bomba_irrigacao",
+      "top": 297.8,
+      "left": 403.2,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_status",
+      "top": 300,
+      "left": 200,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "led_resistor",
+      "top": 320,
+      "left": 150,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp32:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp32:RX0", "$serialMonitor:TX", "", [] ],
+    [ "dht22_sensor:VCC", "esp32:3V3", "red", [ "v0", "h-100", "v50" ] ],
+    [ "dht22_sensor:GND", "esp32:GND.1", "black", [ "v50", "h-100", "v-50" ] ],
+    [ "dht22_sensor:SDA", "esp32:D15", "green", [ "v30", "h-80", "v20" ] ],
+    [ "ph_sensor:VCC", "esp32:3V3", "red", [ "v-50", "h-100", "v50" ] ],
+    [ "ph_sensor:AO", "esp32:A0", "yellow", [ "v-30", "h-120", "v80" ] ],
+    [ "ph_sensor:GND", "ph_pulldown:1", "black", [ "v30" ] ],
+    [ "ph_pulldown:2", "esp32:GND.2", "black", [ "v50", "h-100" ] ],
+    [ "btn_nitrogenio:1.l", "esp32:D13", "green", [ "v0", "h100" ] ],
+    [ "btn_nitrogenio:2.l", "esp32:GND.1", "black", [ "v20", "h120", "v30" ] ],
+    [ "btn_fosforo:1.l", "esp32:D12", "blue", [ "v0", "h100" ] ],
+    [ "btn_fosforo:2.l", "esp32:GND.1", "black", [ "v20", "h120", "v-20" ] ],
+    [ "btn_potassio:1.l", "esp32:D14", "red", [ "v0", "h100" ] ],
+    [ "btn_potassio:2.l", "esp32:GND.1", "black", [ "v20", "h120", "v-70" ] ],
+    [ "bomba_irrigacao:VCC", "esp32:5V", "red", [ "v-100", "h-100" ] ],
+    [ "bomba_irrigacao:GND", "esp32:GND.2", "black", [ "v-80", "h-120", "v-100" ] ],
+    [ "bomba_irrigacao:IN", "esp32:D2", "orange", [ "v-120", "h-150", "v100" ] ],
+    [ "led_status:A", "esp32:D23", "green", [ "v-100" ] ],
+    [ "led_status:C", "led_resistor:1", "black", [ "v20" ] ],
+    [ "led_resistor:2", "esp32:GND.2", "black", [ "v30", "h50", "v-120" ] ]
+  ],
+  "dependencies": {}
+}

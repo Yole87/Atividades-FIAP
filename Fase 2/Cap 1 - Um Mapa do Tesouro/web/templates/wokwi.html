@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmTech - Simulador Wokwi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: #2c5530;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c5530;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(44, 85, 48, 0.1);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .simulator-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .simulator-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .simulator-header h2 {
+            color: #2c5530;
+            margin-bottom: 1rem;
+        }
+
+        .simulator-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .wokwi-container {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #f8f9fa;
+            position: relative;
+        }
+
+        .wokwi-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .simulator-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+        }
+
+        .info-card h3 {
+            color: #2c5530;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+
+        .component-status {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #4caf50;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4caf50, #45a049);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #2196f3, #1976d2);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #666;
+        }
+
+        .loading i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 0.5rem;
+            }
+            
+            .header {
+                padding: 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .simulator-card {
+                padding: 1rem;
+            }
+            
+            .wokwi-container {
+                height: 400px;
+            }
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <i class="fas fa-microchip"></i>
+            FarmTech - Simulador Wokwi
+        </h1>
+        <div class="nav-links">
+            <a href="/">
+                <i class="fas fa-tachometer-alt"></i>
+                Dashboard
+            </a>
+            <a href="#" onclick="recarregarSimulador()">
+                <i class="fas fa-sync-alt"></i>
+                Recarregar
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="simulator-card">
+            <div class="simulator-header">
+                <h2>Simulação ESP32 - Sistema de Irrigação Inteligente</h2>
+                <p>Visualize e teste o funcionamento do sistema embarcado em tempo real</p>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-primary" onclick="iniciarSimulacao()">
+                    <i class="fas fa-play"></i>
+                    Iniciar Simulação
+                </button>
+                <button class="btn btn-secondary" onclick="pararSimulacao()">
+                    <i class="fas fa-stop"></i>
+                    Parar Simulação
+                </button>
+                <a href="https://wokwi.com/projects/new/esp32" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-external-link-alt"></i>
+                    Abrir no Wokwi
+                </a>
+            </div>
+
+            <div class="wokwi-container">
+                <div class="loading" id="loading">
+                    <i class="fas fa-cog"></i>
+                    <p>Carregando simulador...</p>
+                    <small>Aguarde enquanto o Wokwi é inicializado</small>
+                </div>
+                <iframe 
+                    id="wokwi-iframe" 
+                    class="wokwi-iframe" 
+                    style="display: none;"
+                    src="about:blank"
+                    title="Simulador Wokwi ESP32">
+                </iframe>
+            </div>
+
+            <div class="simulator-info">
+                <div class="info-card">
+                    <h3>
+                        <i class="fas fa-microchip"></i>
+                        Componentes Simulados
+                    </h3>
+                    <ul>
+                        <li>
+                            <span class="component-status"></span>
+                            ESP32 DevKit V1
+                        </li>
+                        <li>
+                            <span class="component-status"></span>
+                            Sensor DHT22 (Temperatura/Umidade)
+                        </li>
+                        <li>
+                            <span class="component-status"></span>
+                            Sensor de pH
+                        </li>
+                        <li>
+                            <span class="component-status"></span>
+                            Sensor NPK
+                        </li>
+                        <li>
+                            <span class="component-status"></span>
+                            Bomba d'água (Relé)
+                        </li>
+                        <li>
+                            <span class="component-status"></span>
+                            Display LCD 16x2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>
+                        <i class="fas fa-info-circle"></i>
+                        Funcionalidades
+                    </h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-thermometer-half" style="color: #ff9800;"></i>
+                            Monitoramento de temperatura e umidade
+                        </li>
+                        <li>
+                            <i class="fas fa-flask" style="color: #4caf50;"></i>
+                            Análise de pH e NPK do solo
+                        </li>
+                        <li>
+                            <i class="fas fa-tint" style="color: #2196f3;"></i>
+                            Controle automático de irrigação
+                        </li>
+                        <li>
+                            <i class="fas fa-display" style="color: #9c27b0;"></i>
+                            Interface visual no LCD
+                        </li>
+                        <li>
+                            <i class="fas fa-wifi" style="color: #607d8b;"></i>
+                            Conectividade Wi-Fi simulada
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>
+                        <i class="fas fa-cogs"></i>
+                        Como Usar
+                    </h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-play" style="color: #4caf50;"></i>
+                            Clique em "Iniciar Simulação" para começar
+                        </li>
+                        <li>
+                            <i class="fas fa-mouse-pointer" style="color: #2196f3;"></i>
+                            Interaja com os sensores no simulador
+                        </li>
+                        <li>
+                            <i class="fas fa-eye" style="color: #ff9800;"></i>
+                            Observe as leituras no monitor serial
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-line" style="color: #9c27b0;"></i>
+                            Monitore os dados no dashboard principal
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let simulacaoAtiva = false;
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simular carregamento do Wokwi
+            setTimeout(() => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('wokwi-iframe').style.display = 'block';
+                
+                // Como não temos um projeto Wokwi real, vamos mostrar uma mensagem
+                mostrarMensagemSimulador();
+            }, 2000);
+        });
+
+        function mostrarMensagemSimulador() {
+            const iframe = document.getElementById('wokwi-iframe');
+            const htmlContent = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100vh;
+                            margin: 0;
+                            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                            color: white;
+                            text-align: center;
+                        }
+                        .container {
+                            background: rgba(255,255,255,0.1);
+                            padding: 2rem;
+                            border-radius: 15px;
+                            backdrop-filter: blur(10px);
+                        }
+                        .icon {
+                            font-size: 4rem;
+                            margin-bottom: 1rem;
+                        }
+                        h2 {
+                            margin-bottom: 1rem;
+                        }
+                        p {
+                            margin-bottom: 0.5rem;
+                            opacity: 0.9;
+                        }
+                        .btn {
+                            background: #4caf50;
+                            color: white;
+                            border: none;
+                            padding: 1rem 2rem;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-size: 1rem;
+                            margin-top: 1rem;
+                            text-decoration: none;
+                            display: inline-block;
+                        }
+                        .btn:hover {
+                            background: #45a049;
+                        }
+                    </style>
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+                </head>
+                <body>
+                    <div class="container">
+                        <div class="icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h2>Simulador ESP32 FarmTech</h2>
+                        <p>Para executar a simulação completa:</p>
+                        <p>1. Acesse o Wokwi.com</p>
+                        <p>2. Crie um novo projeto ESP32</p>
+                        <p>3. Copie o código de src/main.cpp</p>
+                        <p>4. Configure o diagram.json</p>
+                        <br>
+                        <a href="https://wokwi.com/projects/new/esp32" target="_blank" class="btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Abrir Wokwi
+                        </a>
+                    </div>
+                </body>
+                </html>
+            `;
+            
+            iframe.srcdoc = htmlContent;
+        }
+
+        function iniciarSimulacao() {
+            if (!simulacaoAtiva) {
+                simulacaoAtiva = true;
+                alert('Simulação iniciada! Para uma experiência completa, acesse o Wokwi.com e carregue o projeto FarmTech.');
+                
+                // Simular dados sendo enviados
+                console.log('Simulação ESP32 iniciada...');
+            }
+        }
+
+        function pararSimulacao() {
+            if (simulacaoAtiva) {
+                simulacaoAtiva = false;
+                alert('Simulação parada.');
+                console.log('Simulação ESP32 parada.');
+            }
+        }
+
+        function recarregarSimulador() {
+            document.getElementById('loading').style.display = 'flex';
+            document.getElementById('wokwi-iframe').style.display = 'none';
+            
+            setTimeout(() => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('wokwi-iframe').style.display = 'block';
+                mostrarMensagemSimulador();
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
