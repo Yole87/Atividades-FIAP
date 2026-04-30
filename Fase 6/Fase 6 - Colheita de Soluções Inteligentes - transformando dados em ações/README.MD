@@ -21,4 +21,4 @@ O desenvolvimento completo, os códigos executados, as predições nas imagens d
 ## 📺 Apresentação em Vídeo (Pitch Técnico)
 Acompanhe o nosso vídeo de 5 minutos, onde apresentamos os resultados na prática, os desafios de infraestrutura enfrentados (limitações de GPU/RAM) e a conclusão sobre a melhor arquitetura para o cliente FarmTech:
 
-🔗 **[INSERIR O LINK DO VÍDEO DO YOUTUBE AQUI]**
+🔗 **[[INSERIR O LINK DO VÍDEO DO YOUTUBE AQUI](https://youtu.be/e8LMRWNYyzA)]**
