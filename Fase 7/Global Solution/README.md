@@ -214,7 +214,7 @@ A arquitetura do AgroSat é equivalente à usada por plataformas como Climate Fi
 
 ## 🔗 Links
 
-- **Repositório:** [INSERIR LINK DO GITHUB]
+- **Repositório:** [[LINK DO GITHUB](https://github.com/Yole87/Atividades-FIAP/tree/FIAP_IA_Online/Fase%207/Global%20Solution)]
 - **NASA POWER API:** https://power.larc.nasa.gov/
 - **Copernicus Browser (Sentinel-2):** https://browser.dataspace.copernicus.eu/
 
