@@ -1,0 +1,94 @@
+[
+  {
+    "status": "success",
+    "timestamp": "2026-06-09T20:43:38.274798",
+    "coordenadas": {
+      "lat": -12.55,
+      "lon": -55.72
+    },
+    "mes": 1,
+    "dados_climaticos": {
+      "temp_media": 24.87,
+      "precip_total": 156.63,
+      "rad_media": 17.72,
+      "dias_chuva": 24,
+      "fonte": "NASA POWER API (dados reais de satélite)"
+    },
+    "previsao": {
+      "produtividade_kg_ha": 2091.65,
+      "nivel_risco": "baixa",
+      "confianca": "0.94 (R² do modelo base)"
+    },
+    "fonte": "NASA POWER API + AgroSat ML Model",
+    "versao": "1.0.0"
+  },
+  {
+    "status": "success",
+    "timestamp": "2026-06-09T20:43:39.022631",
+    "coordenadas": {
+      "lat": -12.55,
+      "lon": -55.72
+    },
+    "mes": 7,
+    "dados_climaticos": {
+      "temp_media": 25.88,
+      "precip_total": 0.0,
+      "rad_media": 20.19,
+      "dias_chuva": 0,
+      "fonte": "NASA POWER API (dados reais de satélite)"
+    },
+    "previsao": {
+      "produtividade_kg_ha": 500.0,
+      "nivel_risco": "baixa",
+      "confianca": "0.94 (R² do modelo base)"
+    },
+    "fonte": "NASA POWER API + AgroSat ML Model",
+    "versao": "1.0.0"
+  },
+  {
+    "status": "success",
+    "timestamp": "2026-06-09T20:43:39.800218",
+    "coordenadas": {
+      "lat": -15.78,
+      "lon": -47.93
+    },
+    "mes": 3,
+    "dados_climaticos": {
+      "temp_media": 25.54,
+      "precip_total": 112.11,
+      "rad_media": 21.69,
+      "dias_chuva": 15,
+      "fonte": "NASA POWER API (dados reais de satélite)"
+    },
+    "previsao": {
+      "produtividade_kg_ha": 1714.85,
+      "nivel_risco": "baixa",
+      "confianca": "0.94 (R² do modelo base)"
+    },
+    "fonte": "NASA POWER API + AgroSat ML Model",
+    "versao": "1.0.0"
+  },
+  {
+    "status": "success",
+    "timestamp": "2026-06-09T20:43:40.597767",
+    "coordenadas": {
+      "lat": -12.55,
+      "lon": -55.72
+    },
+    "mes": 1,
+    "dados_climaticos": {
+      "temp_media": 24.87,
+      "precip_total": 0.0,
+      "rad_media": 17.72,
+      "dias_chuva": 24,
+      "fonte": "NASA POWER API (dados reais de satélite)"
+    },
+    "previsao": {
+      "produtividade_kg_ha": 500.0,
+      "nivel_risco": "baixa",
+      "confianca": "0.94 (R² do modelo base)"
+    },
+    "fonte": "NASA POWER API + AgroSat ML Model",
+    "versao": "1.0.0"
+  }
+]

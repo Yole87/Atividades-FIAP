@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-06-09T20:42:52.122387",
+  "imagem_fonte": "Satélite real (NASA MODIS Terra / Sentinel-2)",
+  "regiao": "Cerrado Brasileiro — Sorriso/MT",
+  "bbox": {
+    "lat_min": -14.0,
+    "lat_max": -11.0,
+    "lon_min": -57.5,
+    "lon_max": -54.0
+  },
+  "classificacao": {
+    "vegetacao_saudavel": {
+      "pixels": 562571,
+      "percentual": 46.7,
+      "ndvi_estimado": 0.58,
+      "status": "Lavoura em boas condições — NDVI estimado: 0.58"
+    },
+    "solo_exposto": {
+      "pixels": 492327,
+      "percentual": 40.8,
+      "ndvi_estimado": 0.08,
+      "status": "Solo exposto ou lavoura em pousio"
+    },
+    "area_urbana": {
+      "pixels": 144973,
+      "percentual": 12.0,
+      "ndvi_estimado": 0.05,
+      "status": "Infraestrutura urbana — Sorriso/Sinop"
+    },
+    "stress_hidrico": {
+      "pixels": 2767,
+      "percentual": 0.2,
+      "ndvi_estimado": 0.21,
+      "status": "Vegetação em stress hídrico"
+    },
+    "corpo_dagua": {
+      "pixels": 16242,
+      "percentual": 1.3,
+      "ndvi_estimado": -0.15,
+      "status": "Rios e corpos d'água identificados"
+    }
+  },
+  "yolo_deteccoes": 0
+}

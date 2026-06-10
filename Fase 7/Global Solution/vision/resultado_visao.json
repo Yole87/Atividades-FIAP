@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-06-09T18:33:32.173570",
+  "imagem": "vision/imagem_satelite.png",
+  "classificacao": {
+    "vegetacao_saudavel": {
+      "pixels": 122869,
+      "percentual": 30.0,
+      "ndvi_estimado": 0.72,
+      "status": "Lavoura em boas condições — produtividade esperada: ALTA"
+    },
+    "corpo_dagua": {
+      "pixels": 7275,
+      "percentual": 1.8,
+      "ndvi_estimado": -0.15,
+      "status": "Recurso hídrico identificado"
+    },
+    "area_urbana": {
+      "pixels": 22758,
+      "percentual": 5.6,
+      "ndvi_estimado": 0.05,
+      "status": "Infraestrutura / construções"
+    },
+    "stress_hidrico": {
+      "pixels": 11601,
+      "percentual": 2.8,
+      "ndvi_estimado": 0.21,
+      "status": "⚠️ Atenção: vegetação em stress hídrico"
+    },
+    "solo_exposto": {
+      "pixels": 245097,
+      "percentual": 59.8,
+      "ndvi_estimado": 0.08,
+      "status": "Solo exposto ou pousio"
+    }
+  },
+  "mapa_gerado": "vision/mapa_classificacao.png"
+}
