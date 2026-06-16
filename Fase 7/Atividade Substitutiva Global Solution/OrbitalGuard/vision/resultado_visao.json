@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-06-16T16:44:12.291147",
+  "objetos_detectados": 6,
+  "acertos": 6,
+  "resultados": [
+    {
+      "bbox": [
+        20,
+        20,
+        64,
+        64
+      ],
+      "classe_real": "satelite_ativo",
+      "classe": "satelite_ativo",
+      "confianca": 0.9853,
+      "nivel_risco": "BAIXO",
+      "acerto": "OK"
+    },
+    {
+      "bbox": [
+        104,
+        20,
+        64,
+        64
+      ],
+      "classe_real": "detrito_metalico",
+      "classe": "detrito_metalico",
+      "confianca": 0.9962,
+      "nivel_risco": "ALTO",
+      "acerto": "OK"
+    },
+    {
+      "bbox": [
+        188,
+        20,
+        64,
+        64
+      ],
+      "classe_real": "fragmento_rochoso",
+      "classe": "fragmento_rochoso",
+      "confianca": 0.9889,
+      "nivel_risco": "ALTO",
+      "acerto": "OK"
+    },
+    {
+      "bbox": [
+        20,
+        104,
+        64,
+        64
+      ],
+      "classe_real": "satelite_inativo",
+      "classe": "satelite_inativo",
+      "confianca": 0.9962,
+      "nivel_risco": "MEDIO",
+      "acerto": "OK"
+    },
+    {
+      "bbox": [
+        104,
+        104,
+        64,
+        64
+      ],
+      "classe_real": "detrito_metalico",
+      "classe": "detrito_metalico",
+      "confianca": 0.9848,
+      "nivel_risco": "ALTO",
+      "acerto": "OK"
+    },
+    {
+      "bbox": [
+        188,
+        104,
+        64,
+        64
+      ],
+      "classe_real": "fragmento_rochoso",
+      "classe": "fragmento_rochoso",
+      "confianca": 0.9905,
+      "nivel_risco": "ALTO",
+      "acerto": "OK"
+    }
+  ],
+  "cobertura_pct": {
+    "satelite_ativo": 16.7,
+    "detrito_metalico": 33.3,
+    "fragmento_rochoso": 33.3,
+    "satelite_inativo": 16.7
+  }
+}

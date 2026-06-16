@@ -1,0 +1,206 @@
+[
+  {
+    "cenario": "ISS (altitude padr\u00e3o)",
+    "statusCode": 200,
+    "timestamp": "2026-06-16T15:55:28.749145+00:00",
+    "entrada": {
+      "altitude_km": 408.0,
+      "inclinacao_graus": 51.6
+    },
+    "iss_posicao": {
+      "latitude": -27.497,
+      "longitude": 134.359,
+      "fonte": "Open Notify API (real)"
+    },
+    "classificacao_cnn": {
+      "detrito_analisado": "Bloco Superior Foguete",
+      "tipo_esperado": "detrito_metalico",
+      "classe_prevista": "detrito_metalico",
+      "confianca": 0.9986,
+      "modelo": "OrbitalCNN (PyTorch) \u2014 ml/modelo_cnn.pth"
+    },
+    "nivel_alerta": "ALTO",
+    "prob_colisao_maxima": 0.696,
+    "detritos_proximos": [
+      {
+        "detrito_id": "2007-004B",
+        "detrito_nome": "Bloco Superior Foguete",
+        "tipo": "detrito_metalico",
+        "prob_colisao": 0.696,
+        "delta_altitude_km": 152.0,
+        "delta_inclinacao_graus": 0.0
+      },
+      {
+        "detrito_id": "1985-092C",
+        "detrito_nome": "Sat\u00e9lite Inativo ASAT",
+        "tipo": "satelite_inativo",
+        "prob_colisao": 0.4105,
+        "delta_altitude_km": 262.0,
+        "delta_inclinacao_graus": 13.5
+      },
+      {
+        "detrito_id": "2021-059K",
+        "detrito_nome": "Fragmento Kosmos-1408",
+        "tipo": "fragmento_rochoso",
+        "prob_colisao": 0.3725,
+        "delta_altitude_km": 22.0,
+        "delta_inclinacao_graus": 31.3
+      }
+    ],
+    "arquitetura": "Cliente \u2192 API Gateway \u2192 Lambda \u2192 CNN + Open Notify API \u2192 S3 + CloudWatch",
+    "endpoint_producao": "GET https://api.orbitalguard.io/risco?altitude_km=408.0&inclinacao=51.6"
+  },
+  {
+    "cenario": "\u00d3rbita LEO Alta",
+    "statusCode": 200,
+    "timestamp": "2026-06-16T15:55:29.134238+00:00",
+    "entrada": {
+      "altitude_km": 780.0,
+      "inclinacao_graus": 86.4
+    },
+    "iss_posicao": {
+      "latitude": -27.4739,
+      "longitude": 134.3824,
+      "fonte": "Open Notify API (real)"
+    },
+    "classificacao_cnn": {
+      "detrito_analisado": "Iridium 33 (inativo)",
+      "tipo_esperado": "satelite_inativo",
+      "classe_prevista": "satelite_inativo",
+      "confianca": 0.5469,
+      "modelo": "OrbitalCNN (PyTorch) \u2014 ml/modelo_cnn.pth"
+    },
+    "nivel_alerta": "CRITICO",
+    "prob_colisao_maxima": 1.0,
+    "detritos_proximos": [
+      {
+        "detrito_id": "2009-005A",
+        "detrito_nome": "Iridium 33 (inativo)",
+        "tipo": "satelite_inativo",
+        "prob_colisao": 1.0,
+        "delta_altitude_km": 0.0,
+        "delta_inclinacao_graus": 0.0
+      },
+      {
+        "detrito_id": "1999-025F",
+        "detrito_nome": "Fragmento Fengyun-1C",
+        "tipo": "detrito_metalico",
+        "prob_colisao": 0.7432,
+        "delta_altitude_km": 40.0,
+        "delta_inclinacao_graus": 12.2
+      },
+      {
+        "detrito_id": "1985-092C",
+        "detrito_nome": "Sat\u00e9lite Inativo ASAT",
+        "tipo": "satelite_inativo",
+        "prob_colisao": 0.5205,
+        "delta_altitude_km": 110.0,
+        "delta_inclinacao_graus": 21.3
+      }
+    ],
+    "arquitetura": "Cliente \u2192 API Gateway \u2192 Lambda \u2192 CNN + Open Notify API \u2192 S3 + CloudWatch",
+    "endpoint_producao": "GET https://api.orbitalguard.io/risco?altitude_km=780.0&inclinacao=86.4"
+  },
+  {
+    "cenario": "\u00d3rbita Sun-Sync",
+    "statusCode": 200,
+    "timestamp": "2026-06-16T15:55:32.527454+00:00",
+    "entrada": {
+      "altitude_km": 820.0,
+      "inclinacao_graus": 98.6
+    },
+    "iss_posicao": {
+      "latitude": -27.3123,
+      "longitude": 134.5457,
+      "fonte": "Open Notify API (real)"
+    },
+    "classificacao_cnn": {
+      "detrito_analisado": "Fragmento Fengyun-1C",
+      "tipo_esperado": "detrito_metalico",
+      "classe_prevista": "detrito_metalico",
+      "confianca": 0.9986,
+      "modelo": "OrbitalCNN (PyTorch) \u2014 ml/modelo_cnn.pth"
+    },
+    "nivel_alerta": "CRITICO",
+    "prob_colisao_maxima": 1.0,
+    "detritos_proximos": [
+      {
+        "detrito_id": "1999-025F",
+        "detrito_nome": "Fragmento Fengyun-1C",
+        "tipo": "detrito_metalico",
+        "prob_colisao": 1.0,
+        "delta_altitude_km": 0.0,
+        "delta_inclinacao_graus": 0.0
+      },
+      {
+        "detrito_id": "2009-005A",
+        "detrito_nome": "Iridium 33 (inativo)",
+        "tipo": "satelite_inativo",
+        "prob_colisao": 0.7432,
+        "delta_altitude_km": 40.0,
+        "delta_inclinacao_graus": 12.2
+      },
+      {
+        "detrito_id": "1985-092C",
+        "detrito_nome": "Sat\u00e9lite Inativo ASAT",
+        "tipo": "satelite_inativo",
+        "prob_colisao": 0.2659,
+        "delta_altitude_km": 150.0,
+        "delta_inclinacao_graus": 33.5
+      }
+    ],
+    "arquitetura": "Cliente \u2192 API Gateway \u2192 Lambda \u2192 CNN + Open Notify API \u2192 S3 + CloudWatch",
+    "endpoint_producao": "GET https://api.orbitalguard.io/risco?altitude_km=820.0&inclinacao=98.6"
+  },
+  {
+    "cenario": "\u00d3rbita Baixa Cr\u00edtica",
+    "statusCode": 200,
+    "timestamp": "2026-06-16T15:55:33.922933+00:00",
+    "entrada": {
+      "altitude_km": 430.0,
+      "inclinacao_graus": 82.9
+    },
+    "iss_posicao": {
+      "latitude": -27.2429,
+      "longitude": 134.6156,
+      "fonte": "Open Notify API (real)"
+    },
+    "classificacao_cnn": {
+      "detrito_analisado": "Fragmento Kosmos-1408",
+      "tipo_esperado": "fragmento_rochoso",
+      "classe_prevista": "fragmento_rochoso",
+      "confianca": 0.9494,
+      "modelo": "OrbitalCNN (PyTorch) \u2014 ml/modelo_cnn.pth"
+    },
+    "nivel_alerta": "CRITICO",
+    "prob_colisao_maxima": 1.0,
+    "detritos_proximos": [
+      {
+        "detrito_id": "2021-059K",
+        "detrito_nome": "Fragmento Kosmos-1408",
+        "tipo": "fragmento_rochoso",
+        "prob_colisao": 1.0,
+        "delta_altitude_km": 0.0,
+        "delta_inclinacao_graus": 0.0
+      },
+      {
+        "detrito_id": "1985-092C",
+        "detrito_nome": "Sat\u00e9lite Inativo ASAT",
+        "tipo": "satelite_inativo",
+        "prob_colisao": 0.4024,
+        "delta_altitude_km": 240.0,
+        "delta_inclinacao_graus": 17.8
+      },
+      {
+        "detrito_id": "2007-004B",
+        "detrito_nome": "Bloco Superior Foguete",
+        "tipo": "detrito_metalico",
+        "prob_colisao": 0.3222,
+        "delta_altitude_km": 130.0,
+        "delta_inclinacao_graus": 31.3
+      }
+    ],
+    "arquitetura": "Cliente \u2192 API Gateway \u2192 Lambda \u2192 CNN + Open Notify API \u2192 S3 + CloudWatch",
+    "endpoint_producao": "GET https://api.orbitalguard.io/risco?altitude_km=430.0&inclinacao=82.9"
+  }
+]

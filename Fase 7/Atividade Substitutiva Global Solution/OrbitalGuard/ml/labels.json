@@ -1,0 +1,4002 @@
+[
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_000.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_001.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_002.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_003.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_004.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_005.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_006.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_007.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_008.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_009.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_010.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_011.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_012.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_013.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_014.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_015.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_016.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_017.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_018.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_019.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_020.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_021.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_022.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_023.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_024.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_025.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_026.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_027.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_028.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_029.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_030.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_031.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_032.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_033.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_034.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_035.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_036.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_037.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_038.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_039.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_040.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_041.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_042.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_043.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_044.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_045.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_046.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_047.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_048.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_049.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_050.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_051.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_052.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_053.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_054.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_055.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_056.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_057.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_058.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_059.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_060.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_061.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_062.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_063.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_064.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_065.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_066.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_067.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_068.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_069.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_070.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_071.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_072.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_073.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_074.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_075.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_076.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_077.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_078.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_079.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_080.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_081.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_082.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_083.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_084.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_085.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_086.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_087.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_088.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_089.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_090.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_091.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_092.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_093.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_094.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_095.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_096.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_097.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_098.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_099.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_100.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_101.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_102.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_103.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_104.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_105.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_106.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_107.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_108.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_109.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_110.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_111.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_112.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_113.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_114.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_115.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_116.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_117.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_118.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_119.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_120.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_121.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_122.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_123.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_124.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_125.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_126.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_127.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_128.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_129.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_130.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_131.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_132.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_133.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_134.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_135.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_136.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_137.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_138.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_139.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_140.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_141.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_142.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_143.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_144.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_145.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_146.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_147.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_148.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_149.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_150.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_151.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_152.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_153.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_154.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_155.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_156.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_157.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_158.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_159.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_160.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_161.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_162.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_163.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_164.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_165.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_166.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_167.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_168.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_169.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_170.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_171.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_172.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_173.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_174.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_175.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_176.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_177.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_178.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_179.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_180.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_181.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_182.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_183.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_184.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_185.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_186.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_187.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_188.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_189.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_190.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_191.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_192.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_193.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_194.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_195.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_196.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_197.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_198.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "satelite_ativo\\satelite_ativo_199.png",
+    "classe": "satelite_ativo",
+    "class_id": 0
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_000.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_001.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_002.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_003.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_004.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_005.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_006.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_007.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_008.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_009.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_010.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_011.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_012.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_013.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_014.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_015.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_016.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_017.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_018.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_019.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_020.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_021.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_022.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_023.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_024.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_025.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_026.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_027.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_028.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_029.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_030.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_031.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_032.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_033.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_034.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_035.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_036.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_037.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_038.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_039.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_040.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_041.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_042.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_043.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_044.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_045.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_046.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_047.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_048.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_049.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_050.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_051.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_052.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_053.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_054.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_055.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_056.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_057.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_058.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_059.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_060.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_061.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_062.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_063.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_064.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_065.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_066.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_067.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_068.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_069.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_070.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_071.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_072.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_073.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_074.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_075.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_076.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_077.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_078.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_079.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_080.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_081.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_082.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_083.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_084.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_085.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_086.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_087.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_088.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_089.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_090.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_091.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_092.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_093.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_094.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_095.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_096.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_097.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_098.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_099.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_100.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_101.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_102.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_103.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_104.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_105.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_106.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_107.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_108.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_109.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_110.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_111.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_112.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_113.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_114.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_115.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_116.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_117.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_118.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_119.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_120.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_121.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_122.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_123.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_124.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_125.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_126.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_127.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_128.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_129.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_130.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_131.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_132.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_133.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_134.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_135.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_136.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_137.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_138.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_139.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_140.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_141.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_142.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_143.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_144.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_145.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_146.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_147.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_148.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_149.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_150.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_151.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_152.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_153.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_154.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_155.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_156.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_157.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_158.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_159.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_160.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_161.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_162.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_163.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_164.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_165.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_166.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_167.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_168.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_169.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_170.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_171.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_172.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_173.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_174.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_175.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_176.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_177.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_178.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_179.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_180.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_181.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_182.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_183.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_184.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_185.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_186.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_187.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_188.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_189.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_190.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_191.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_192.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_193.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_194.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_195.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_196.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_197.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_198.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "detrito_metalico\\detrito_metalico_199.png",
+    "classe": "detrito_metalico",
+    "class_id": 1
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_000.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_001.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_002.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_003.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_004.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_005.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_006.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_007.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_008.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_009.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_010.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_011.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_012.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_013.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_014.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_015.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_016.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_017.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_018.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_019.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_020.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_021.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_022.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_023.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_024.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_025.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_026.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_027.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_028.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_029.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_030.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_031.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_032.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_033.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_034.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_035.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_036.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_037.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_038.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_039.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_040.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_041.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_042.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_043.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_044.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_045.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_046.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_047.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_048.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_049.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_050.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_051.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_052.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_053.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_054.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_055.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_056.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_057.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_058.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_059.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_060.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_061.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_062.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_063.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_064.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_065.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_066.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_067.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_068.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_069.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_070.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_071.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_072.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_073.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_074.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_075.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_076.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_077.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_078.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_079.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_080.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_081.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_082.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_083.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_084.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_085.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_086.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_087.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_088.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_089.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_090.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_091.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_092.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_093.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_094.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_095.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_096.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_097.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_098.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_099.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_100.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_101.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_102.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_103.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_104.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_105.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_106.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_107.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_108.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_109.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_110.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_111.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_112.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_113.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_114.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_115.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_116.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_117.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_118.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_119.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_120.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_121.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_122.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_123.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_124.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_125.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_126.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_127.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_128.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_129.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_130.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_131.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_132.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_133.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_134.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_135.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_136.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_137.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_138.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_139.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_140.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_141.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_142.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_143.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_144.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_145.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_146.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_147.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_148.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_149.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_150.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_151.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_152.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_153.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_154.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_155.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_156.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_157.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_158.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_159.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_160.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_161.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_162.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_163.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_164.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_165.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_166.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_167.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_168.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_169.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_170.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_171.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_172.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_173.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_174.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_175.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_176.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_177.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_178.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_179.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_180.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_181.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_182.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_183.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_184.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_185.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_186.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_187.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_188.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_189.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_190.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_191.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_192.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_193.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_194.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_195.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_196.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_197.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_198.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "fragmento_rochoso\\fragmento_rochoso_199.png",
+    "classe": "fragmento_rochoso",
+    "class_id": 2
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_000.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_001.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_002.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_003.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_004.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_005.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_006.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_007.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_008.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_009.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_010.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_011.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_012.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_013.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_014.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_015.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_016.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_017.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_018.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_019.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_020.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_021.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_022.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_023.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_024.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_025.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_026.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_027.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_028.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_029.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_030.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_031.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_032.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_033.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_034.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_035.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_036.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_037.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_038.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_039.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_040.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_041.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_042.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_043.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_044.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_045.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_046.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_047.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_048.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_049.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_050.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_051.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_052.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_053.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_054.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_055.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_056.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_057.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_058.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_059.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_060.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_061.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_062.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_063.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_064.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_065.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_066.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_067.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_068.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_069.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_070.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_071.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_072.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_073.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_074.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_075.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_076.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_077.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_078.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_079.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_080.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_081.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_082.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_083.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_084.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_085.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_086.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_087.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_088.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_089.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_090.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_091.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_092.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_093.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_094.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_095.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_096.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_097.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_098.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_099.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_100.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_101.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_102.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_103.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_104.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_105.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_106.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_107.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_108.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_109.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_110.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_111.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_112.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_113.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_114.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_115.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_116.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_117.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_118.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_119.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_120.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_121.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_122.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_123.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_124.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_125.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_126.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_127.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_128.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_129.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_130.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_131.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_132.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_133.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_134.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_135.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_136.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_137.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_138.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_139.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_140.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_141.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_142.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_143.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_144.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_145.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_146.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_147.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_148.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_149.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_150.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_151.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_152.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_153.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_154.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_155.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_156.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_157.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_158.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_159.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_160.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_161.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_162.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_163.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_164.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_165.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_166.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_167.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_168.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_169.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_170.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_171.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_172.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_173.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_174.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_175.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_176.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_177.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_178.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_179.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_180.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_181.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_182.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_183.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_184.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_185.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_186.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_187.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_188.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_189.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_190.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_191.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_192.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_193.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_194.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_195.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_196.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_197.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_198.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  },
+  {
+    "arquivo": "satelite_inativo\\satelite_inativo_199.png",
+    "classe": "satelite_inativo",
+    "class_id": 3
+  }
+]
