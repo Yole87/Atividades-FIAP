@@ -1,0 +1,50 @@
+{
+  "imagem_tamanho": "256x256",
+  "ndwi_medio": -0.3419,
+  "percentual_agua_limpa": 8.53,
+  "turbidez_espectral_media": 0.1251,
+  "zonas_classificadas": [
+    {
+      "zona": "Zona A \u2014 Normal",
+      "classe_detectada": "normal",
+      "esperado": "normal",
+      "correto": true,
+      "R": 0.0841,
+      "G": 0.2123,
+      "B": 0.6183,
+      "ndwi_medio": 0.4848
+    },
+    {
+      "zona": "Zona B \u2014 Alerta",
+      "classe_detectada": "alerta",
+      "esperado": "alerta",
+      "correto": true,
+      "R": 0.3198,
+      "G": 0.4168,
+      "B": 0.2849,
+      "ndwi_medio": -0.2056
+    },
+    {
+      "zona": "Zona C \u2014 Cr\u00edtico",
+      "classe_detectada": "critico",
+      "esperado": "critico",
+      "correto": true,
+      "R": 0.5791,
+      "G": 0.375,
+      "B": 0.1045,
+      "ndwi_medio": -0.5652
+    },
+    {
+      "zona": "Zona D \u2014 T\u00f3xico",
+      "classe_detectada": "toxico",
+      "esperado": "toxico",
+      "correto": true,
+      "R": 0.3679,
+      "G": 0.1645,
+      "B": 0.0792,
+      "ndwi_medio": -0.3465
+    }
+  ],
+  "total_zonas": 4,
+  "zonas_corretas": 4
+}

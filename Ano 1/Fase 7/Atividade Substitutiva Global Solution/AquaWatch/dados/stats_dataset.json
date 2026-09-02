@@ -1,0 +1,22 @@
+{
+  "seed": 42,
+  "n_timesteps": 24,
+  "n_features": 6,
+  "features": [
+    "pH",
+    "turbidez_NTU",
+    "TDS_mgL",
+    "temperatura_C",
+    "OD_mgL",
+    "condutividade_uScm"
+  ],
+  "classes": {
+    "0": "normal",
+    "1": "alerta",
+    "2": "critico",
+    "3": "toxico"
+  },
+  "total_amostras": 800,
+  "fracao_transicao": 0.3,
+  "nota": "30% amostras em zona de transicao entre classes adjacentes"
+}

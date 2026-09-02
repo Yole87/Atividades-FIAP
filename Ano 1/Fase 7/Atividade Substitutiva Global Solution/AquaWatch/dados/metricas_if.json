@@ -1,0 +1,101 @@
+{
+  "modelo": "Isolation Forest",
+  "n_estimators": 200,
+  "contamination": 0.05,
+  "acuracia_binaria": 0.955,
+  "precision": 0.9829,
+  "recall": 0.9567,
+  "f1_score": 0.9696,
+  "anomalias_detectadas": 584,
+  "total_amostras": 800,
+  "leituras_tempo_real": [
+    {
+      "ponto": "Rio-001",
+      "pH": 7.1,
+      "turbidez": 1.2,
+      "TDS": 230,
+      "temperatura": 19.5,
+      "OD": 8.2,
+      "condutividade": 380,
+      "status": "ANOMALIA",
+      "anomaly_score": -0.6014
+    },
+    {
+      "ponto": "Rio-002",
+      "pH": 6.8,
+      "turbidez": 2.1,
+      "TDS": 310,
+      "temperatura": 21.0,
+      "OD": 7.5,
+      "condutividade": 450,
+      "status": "NORMAL",
+      "anomaly_score": -0.4113
+    },
+    {
+      "ponto": "Rio-003",
+      "pH": 5.5,
+      "turbidez": 12.0,
+      "TDS": 620,
+      "temperatura": 28.0,
+      "OD": 4.1,
+      "condutividade": 1200,
+      "status": "ANOMALIA",
+      "anomaly_score": -0.7374
+    },
+    {
+      "ponto": "Rio-004",
+      "pH": 4.2,
+      "turbidez": 45.0,
+      "TDS": 980,
+      "temperatura": 31.5,
+      "OD": 2.3,
+      "condutividade": 2500,
+      "status": "ANOMALIA",
+      "anomaly_score": -0.7374
+    },
+    {
+      "ponto": "Rio-005",
+      "pH": 3.1,
+      "turbidez": 95.0,
+      "TDS": 1950,
+      "temperatura": 36.0,
+      "OD": 0.5,
+      "condutividade": 4200,
+      "status": "ANOMALIA",
+      "anomaly_score": -0.7374
+    },
+    {
+      "ponto": "Rio-006",
+      "pH": 6.9,
+      "turbidez": 3.5,
+      "TDS": 290,
+      "temperatura": 20.0,
+      "OD": 7.8,
+      "condutividade": 420,
+      "status": "NORMAL",
+      "anomaly_score": -0.4922
+    },
+    {
+      "ponto": "Rio-007",
+      "pH": 5.8,
+      "turbidez": 8.0,
+      "TDS": 510,
+      "temperatura": 27.0,
+      "OD": 4.8,
+      "condutividade": 980,
+      "status": "ANOMALIA",
+      "anomaly_score": -0.7137
+    },
+    {
+      "ponto": "Rio-008",
+      "pH": 7.3,
+      "turbidez": 0.9,
+      "TDS": 205,
+      "temperatura": 18.0,
+      "OD": 8.5,
+      "condutividade": 350,
+      "status": "ANOMALIA",
+      "anomaly_score": -0.6473
+    }
+  ]
+}

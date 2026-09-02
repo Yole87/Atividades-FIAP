@@ -1,0 +1,190 @@
+[
+  {
+    "status": 200,
+    "timestamp": "2026-06-17T02:08:43.449361+00:00",
+    "ponto_id": "PONTO-PN-001",
+    "coordenadas": {
+      "lat": -22.9,
+      "lon": -43.1
+    },
+    "sensor_esp32": {
+      "pH": 7.2,
+      "turbidez_NTU": 1.1,
+      "TDS_mgL": 195.0,
+      "temperatura_C": 19.0,
+      "OD_mgL": 8.4,
+      "condutividade_uScm": 320.0
+    },
+    "lstm_classificacao": {
+      "classe": "normal",
+      "classe_id": 0,
+      "confianca": 89.27,
+      "probabilidades": {
+        "normal": 89.27,
+        "alerta": 5.2,
+        "critico": 2.99,
+        "toxico": 2.53
+      }
+    },
+    "isolation_forest": {
+      "anomalia_detectada": true,
+      "anomaly_score": -0.6368,
+      "interpretacao": "Leitura an\u00f4mala \u2014 afasta-se do padr\u00e3o normal"
+    },
+    "usgs_api": {
+      "fonte": "USGS_simulado_fallback",
+      "site": "01646500",
+      "status_http": 200,
+      "erro": "<urlopen error _ssl.c:1063: The handshake operation timed out>",
+      "parametros": {
+        "Temperature, water": {
+          "valor": 18.5,
+          "unidade": "deg C",
+          "timestamp": "2026-06-17T02:08:53.091651+00:00"
+        },
+        "Specific conductance": {
+          "valor": 320.0,
+          "unidade": "uS/cm @25C",
+          "timestamp": "2026-06-17T02:08:53.091666+00:00"
+        }
+      }
+    },
+    "nivel_alerta": "MEDIO",
+    "acao_recomendada": "Aumentar frequ\u00eancia de coleta"
+  },
+  {
+    "status": 200,
+    "timestamp": "2026-06-17T02:08:53.093581+00:00",
+    "ponto_id": "PONTO-AGR-007",
+    "coordenadas": {
+      "lat": -15.8,
+      "lon": -47.9
+    },
+    "sensor_esp32": {
+      "pH": 6.1,
+      "turbidez_NTU": 8.5,
+      "TDS_mgL": 490.0,
+      "temperatura_C": 27.0,
+      "OD_mgL": 5.1,
+      "condutividade_uScm": 920.0
+    },
+    "lstm_classificacao": {
+      "classe": "alerta",
+      "classe_id": 1,
+      "confianca": 48.54,
+      "probabilidades": {
+        "normal": 3.26,
+        "alerta": 48.54,
+        "critico": 44.69,
+        "toxico": 3.51
+      }
+    },
+    "isolation_forest": {
+      "anomalia_detectada": true,
+      "anomaly_score": -0.7207,
+      "interpretacao": "Leitura an\u00f4mala \u2014 afasta-se do padr\u00e3o normal"
+    },
+    "usgs_api": {
+      "fonte": "USGS_simulado_fallback",
+      "site": "01646500",
+      "status_http": 200,
+      "erro": "<urlopen error _ssl.c:1063: The handshake operation timed out>",
+      "parametros": {
+        "Temperature, water": {
+          "valor": 18.5,
+          "unidade": "deg C",
+          "timestamp": "2026-06-17T02:09:01.313383+00:00"
+        },
+        "Specific conductance": {
+          "valor": 320.0,
+          "unidade": "uS/cm @25C",
+          "timestamp": "2026-06-17T02:09:01.313407+00:00"
+        }
+      }
+    },
+    "nivel_alerta": "MEDIO",
+    "acao_recomendada": "Aumentar frequ\u00eancia de coleta"
+  },
+  {
+    "status": 200,
+    "timestamp": "2026-06-17T02:09:01.315895+00:00",
+    "ponto_id": "PONTO-IND-023",
+    "coordenadas": {
+      "lat": -23.5,
+      "lon": -46.6
+    },
+    "sensor_esp32": {
+      "pH": 4.8,
+      "turbidez_NTU": 22.0,
+      "TDS_mgL": 810.0,
+      "temperatura_C": 31.0,
+      "OD_mgL": 2.8,
+      "condutividade_uScm": 1750.0
+    },
+    "lstm_classificacao": {
+      "classe": "critico",
+      "classe_id": 2,
+      "confianca": 89.92,
+      "probabilidades": {
+        "normal": 2.31,
+        "alerta": 3.17,
+        "critico": 89.92,
+        "toxico": 4.6
+      }
+    },
+    "isolation_forest": {
+      "anomalia_detectada": true,
+      "anomaly_score": -0.7374,
+      "interpretacao": "Leitura an\u00f4mala \u2014 afasta-se do padr\u00e3o normal"
+    },
+    "usgs_api": {
+      "fonte": "USGS_API_real",
+      "site": "01646500",
+      "parametros": {},
+      "status_http": 200
+    },
+    "nivel_alerta": "ALTO",
+    "acao_recomendada": "Acionar equipe de campo imediatamente"
+  },
+  {
+    "status": 200,
+    "timestamp": "2026-06-17T02:09:03.312200+00:00",
+    "ponto_id": "PONTO-ALE-099",
+    "coordenadas": {
+      "lat": -3.7,
+      "lon": -38.5
+    },
+    "sensor_esp32": {
+      "pH": 3.2,
+      "turbidez_NTU": 110.0,
+      "TDS_mgL": 2100.0,
+      "temperatura_C": 37.0,
+      "OD_mgL": 0.4,
+      "condutividade_uScm": 4800.0
+    },
+    "lstm_classificacao": {
+      "classe": "toxico",
+      "classe_id": 3,
+      "confianca": 93.36,
+      "probabilidades": {
+        "normal": 2.01,
+        "alerta": 2.17,
+        "critico": 2.46,
+        "toxico": 93.36
+      }
+    },
+    "isolation_forest": {
+      "anomalia_detectada": true,
+      "anomaly_score": -0.7374,
+      "interpretacao": "Leitura an\u00f4mala \u2014 afasta-se do padr\u00e3o normal"
+    },
+    "usgs_api": {
+      "fonte": "USGS_API_real",
+      "site": "01646500",
+      "parametros": {},
+      "status_http": 200
+    },
+    "nivel_alerta": "CRITICO",
+    "acao_recomendada": "EMERG\u00caNCIA \u2014 Notificar autoridades ambientais"
+  }
+]

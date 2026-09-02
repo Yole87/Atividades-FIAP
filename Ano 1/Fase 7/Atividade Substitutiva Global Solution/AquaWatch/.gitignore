@@ -1,0 +1,37 @@
+# Modelos treinados (binários pesados — regenerar com os scripts)
+modelos/
+dados/*.npy
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+
+# Arquivos gerados (regenerados ao rodar o pipeline)
+vision/analise_espectral.png
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# PDFs e DOCX de entrega (subir separado / via plataforma)
+*.pdf
+*.docx
+
+# Dados pesados
+*.pkl

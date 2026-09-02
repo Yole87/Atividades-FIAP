@@ -1,0 +1,78 @@
+{
+  "colecao": "leituras_aquawatch",
+  "documentos": [
+    {
+      "_id": "doc_0001",
+      "timestamp": "2026-06-17T02:08:43.449361+00:00",
+      "ponto_id": "PONTO-PN-001",
+      "nivel_alerta": "MEDIO",
+      "classe_lstm": "normal",
+      "confianca_lstm": 89.27,
+      "anomalia_if": true,
+      "sensor": {
+        "pH": 7.2,
+        "turbidez_NTU": 1.1,
+        "TDS_mgL": 195.0,
+        "temperatura_C": 19.0,
+        "OD_mgL": 8.4,
+        "condutividade_uScm": 320.0
+      },
+      "fonte_api": "USGS_simulado_fallback"
+    },
+    {
+      "_id": "doc_0002",
+      "timestamp": "2026-06-17T02:08:53.093581+00:00",
+      "ponto_id": "PONTO-AGR-007",
+      "nivel_alerta": "MEDIO",
+      "classe_lstm": "alerta",
+      "confianca_lstm": 48.54,
+      "anomalia_if": true,
+      "sensor": {
+        "pH": 6.1,
+        "turbidez_NTU": 8.5,
+        "TDS_mgL": 490.0,
+        "temperatura_C": 27.0,
+        "OD_mgL": 5.1,
+        "condutividade_uScm": 920.0
+      },
+      "fonte_api": "USGS_simulado_fallback"
+    },
+    {
+      "_id": "doc_0003",
+      "timestamp": "2026-06-17T02:09:01.315895+00:00",
+      "ponto_id": "PONTO-IND-023",
+      "nivel_alerta": "ALTO",
+      "classe_lstm": "critico",
+      "confianca_lstm": 89.92,
+      "anomalia_if": true,
+      "sensor": {
+        "pH": 4.8,
+        "turbidez_NTU": 22.0,
+        "TDS_mgL": 810.0,
+        "temperatura_C": 31.0,
+        "OD_mgL": 2.8,
+        "condutividade_uScm": 1750.0
+      },
+      "fonte_api": "USGS_API_real"
+    },
+    {
+      "_id": "doc_0004",
+      "timestamp": "2026-06-17T02:09:03.312200+00:00",
+      "ponto_id": "PONTO-ALE-099",
+      "nivel_alerta": "CRITICO",
+      "classe_lstm": "toxico",
+      "confianca_lstm": 93.36,
+      "anomalia_if": true,
+      "sensor": {
+        "pH": 3.2,
+        "turbidez_NTU": 110.0,
+        "TDS_mgL": 2100.0,
+        "temperatura_C": 37.0,
+        "OD_mgL": 0.4,
+        "condutividade_uScm": 4800.0
+      },
+      "fonte_api": "USGS_API_real"
+    }
+  ],
+  "total_documentos": 4
+}
