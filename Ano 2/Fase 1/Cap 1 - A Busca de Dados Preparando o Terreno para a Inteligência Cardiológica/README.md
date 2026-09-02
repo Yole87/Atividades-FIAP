@@ -19,7 +19,7 @@
 
 ### Coordenador(a)
 
-- 
+- Andre Godoi
 
 ## 📜 Descrição
 
