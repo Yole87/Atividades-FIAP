@@ -1,0 +1,5 @@
+Github ://github.com/Yole87/Atividades-FIAP/tree/FIAP_IA_Online/Ano%202/Fase%201/Cap%201%20-%20A%20Busca%20de%20Dados%20Preparando%20o%20Terreno%20para%20a%20Intelig%C3%AAncia%20Cardiol%C3%B3gica
+Cleveland Heart Disease Dataset (.csv): https://drive.google.com/file/d/1mG9rDA_t4UILysb804DoJHQonTE7ucN7/view?usp=sharing
+Estatística Cardiovascular Brasil 2023 (.txt): https://drive.google.com/file/d/1zarzA6NWpioNbuoUqtj6N0xe3rk593uP/view?usp=sharing
+Infarto do Miocárdio: Sintomas e Mortalidade (.txt): https://drive.google.com/file/d/1m0qAG9uen7An9u0OQrfMQPJ6umKEm2pU/view?usp=sharing
+234 Raio-X Torácico — Classe NORMAL (.jpeg): https://drive.google.com/drive/folders/1QrJ0G5MwkoLYCjC2ylIjczYZKjvc8q1D?usp=sharing

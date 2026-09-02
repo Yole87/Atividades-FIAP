@@ -1,30 +1,60 @@
-# 🫀 CardioIA — Fase 1: A Busca de Dados
-### Preparando o Terreno para a Inteligência Cardiológica
+# FIAP - Faculdade de Informática e Administração Paulista
 
-> **Curso:** Inteligência Artificial — FIAP  
-> **Ano:** 2 | **Fase:** 1  
-> **Equipe:** Alan Robin Santos RM: 567437 | Lucas Alberto da Silva Amorim  RM: 567505
-> **Disciplina:** Cap 1 — A Busca de Dados: Preparando o Terreno para a Inteligência Cardiológica
+[![FIAP - Faculdade de Informática e Admnistração Paulista](https://github.com/agodoi/templateFiapVfinal/raw/main/assets/logo-fiap.png)](https://www.fiap.com.br/)
+
+# CardioIA — Fase 1: A Busca de Dados
+
+## Grupo CardioIA
+
+## 👨‍🎓 Integrantes:
+
+- Alan Robin Santos RM: 567437
+- Lucas Alberto da Silva Amorim RM: 567505
+
+## 👩‍🏫 Professores:
+
+### Tutor(a)
+
+- Leonardo Ruiz Orabona
+
+### Coordenador(a)
+
+- 
+
+## 📜 Descrição
+
+O **CardioIA** é um projeto acadêmico que simula o ecossistema de uma clínica de cardiologia moderna, integrando dados clínicos, modelos de Machine Learning, Visão Computacional, IoT e agentes inteligentes para lidar com triagem, diagnósticos, monitoramento, assistência remota e previsões médicas.
+
+Nesta **Fase 1 — Batimentos de Dados**, assumimos o papel de cientistas de dados hospitalares. O objetivo é levantar, organizar e documentar três tipos de dados fundamentais que alimentarão os módulos inteligentes do CardioIA nas fases seguintes:
+
+**Parte 1 — Dados Numéricos (IoT):** Utilizamos o Cleveland Heart Disease Dataset, disponibilizado pelo UCI Machine Learning Repository, com 297 linhas válidas e 14 variáveis clínicas como idade, sexo, pressão arterial, colesterol, frequência cardíaca e diagnóstico de doença cardíaca. Os dados são reais, coletados em ambiente hospitalar, e servirão para treinar modelos preditivos de risco cardiovascular.
+
+**Parte 2 — Dados Textuais (NLP):** Coletamos dois artigos científicos dos Arquivos Brasileiros de Cardiologia (SciELO): a Estatística Cardiovascular Brasil 2023 e um estudo sobre Estratégia Fármaco-Invasiva no Infarto do Miocárdio. Esses textos serão explorados por algoritmos de NLP para extração de entidades médicas, classificação de tópicos, sumarização automática e identificação de sintomas para triagem digital.
+
+**Parte 3 — Dados Visuais (Visão Computacional):** Reunimos 234 imagens de raio-X torácico da classe NORMAL, provenientes do Chest X-Ray Images Dataset (Kaggle/Guangzhou Women and Children's Medical Center). Essas imagens estabelecem a linha de base para que modelos de Visão Computacional identifiquem anomalias cardiopulmonares como cardiomegalia, derrame pleural e congestão pulmonar nas fases seguintes.
+
+A coleta considerou os princípios de Governança de Dados em IA, identificando vieses presentes nos datasets (geográfico, de gênero e temporal) que deverão ser mitigados nas fases seguintes do projeto.
 
 ---
 
-## 📌 Sobre o Projeto
+## 📁 Estrutura de pastas
 
-O **CardioIA** é um projeto acadêmico que simula o ecossistema de uma clínica de cardiologia moderna, integrando dados clínicos, modelos de Machine Learning, Visão Computacional, IoT e agentes inteligentes.
+Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-Nesta **Fase 1**, assumimos o papel de cientistas de dados hospitalares. O objetivo é levantar, organizar e documentar três tipos de dados fundamentais que alimentarão os módulos inteligentes do CardioIA nas fases seguintes:
+- **assets**: aqui estão as imagens de raio-X torácico utilizadas na Parte 3 — Dados Visuais. Na subpasta `imagens_raio_x`, encontram-se as 234 imagens `.jpeg` da classe NORMAL.
 
-- 📊 **Dados Numéricos** — dataset de pacientes cardíacos
-- 📝 **Dados Textuais** — artigos médicos para NLP
-- 🖼️ **Dados Visuais** — imagens de raio-X torácico para Visão Computacional
+- **docs**: aqui estão os arquivos de texto utilizados na Parte 2 — Dados Textuais. Contém os dois artigos científicos em formato `.txt` obtidos do SciELO.
 
----
+- **notebooks**: pasta reservada para os notebooks Jupyter/Colab que serão desenvolvidos nas fases seguintes do CardioIA para consumir e processar os dados coletados.
 
-## 📂 Estrutura do Repositório
+- **heart_disease_cleveland.csv**: dataset numérico principal com 297 linhas e 14 variáveis clínicas de pacientes cardíacos, utilizado na Parte 1 — Dados Numéricos.
+
+- **README.md**: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
 ```
 Fase 1/
 ├── README.md
+├── heart_disease_cleveland.csv
 ├── docs/
 │   ├── texto1_estatistica_cardiovascular_brasil_2023.txt
 │   └── texto2_infarto_miocardio_sintomas_mortalidade.txt
@@ -50,8 +80,6 @@ Utilizamos o **Cleveland Heart Disease Dataset**, disponibilizado pelo **UCI Mac
 
 > Os dados são **reais**, coletados em ambiente hospitalar. Das 303 linhas originais, 6 foram removidas por conterem valores ausentes, o que é esperado em dados clínicos reais e faz parte do processo de governança e limpeza de dados em projetos de IA.
 
----
-
 ### Variáveis do Dataset
 
 | Variável | Descrição | Tipo |
@@ -71,11 +99,7 @@ Utilizamos o **Cleveland Heart Disease Dataset**, disponibilizado pelo **UCI Mac
 | `thal` | Talassemia (3 = normal, 6 = fixo, 7 = reversível) | Categórico |
 | `target` | Diagnóstico de doença cardíaca (0 = ausente, 1-4 = presente) | Categórico |
 
----
-
 ### Variáveis Mais Relevantes e Justificativa Clínica
-
-Do ponto de vista clínico e de IA, destacamos as seguintes variáveis como mais relevantes para o projeto:
 
 **1. `target` — Variável alvo**  
 É a variável que os modelos de IA irão aprender a prever. Indica a presença ou ausência de doença cardíaca, sendo o centro de todo o projeto preditivo.
@@ -98,8 +122,6 @@ Idade e sexo são determinantes clássicos de risco cardiovascular. Homens acima
 **7. `exang` — Angina induzida por exercício**  
 A angina ao esforço é um sinal clínico direto de isquemia miocárdica — condição em que o coração não recebe oxigênio suficiente. Variável de alto valor preditivo.
 
----
-
 ### Considerações sobre Governança de Dados e Viés
 
 Este dataset, embora robusto academicamente, apresenta **limitações que devem ser consideradas em projetos de IA responsável**:
@@ -116,8 +138,6 @@ Essas questões de governança serão consideradas nas fases seguintes ao treina
 
 Os textos foram obtidos dos **Arquivos Brasileiros de Cardiologia (ABC Cardiol)**, publicação científica indexada no SciELO. Os arquivos estão disponíveis na pasta `docs/` do repositório e também hospedados no Google Drive para acesso direto.
 
----
-
 ### Texto 1 — Estatística Cardiovascular Brasil 2023
 
 - **Arquivo:** `docs/texto1_estatistica_cardiovascular_brasil_2023.txt`
@@ -127,8 +147,6 @@ Os textos foram obtidos dos **Arquivos Brasileiros de Cardiologia (ABC Cardiol)*
 - **Link Drive:** [texto1_estatistica_cardiovascular_brasil_2023.txt](https://drive.google.com/file/d/1zarzA6NWpioNbuoUqtj6N0xe3rk593uP/view?usp=sharing)
 
 Documento de referência nacional sobre epidemiologia cardiovascular no Brasil, compilando dados do Ministério da Saúde, GBD e diversas coortes. Abrange mortalidade, incidência, prevalência e custos de doenças como infarto, AVC, insuficiência cardíaca e hipertensão.
-
----
 
 ### Texto 2 — Estratégia Fármaco-Invasiva no Infarto do Miocárdio
 
@@ -140,26 +158,22 @@ Documento de referência nacional sobre epidemiologia cardiovascular no Brasil, 
 
 Estudo com 2.290 pacientes analisando a apresentação de sintomas isquêmicos, métricas temporais de atendimento e preditores de mortalidade hospitalar no infarto com supradesnivelamento do segmento ST (IAMCSST).
 
----
-
 ### Como Esses Textos Podem Ser Explorados por Algoritmos de NLP
 
 **1. Extração de Entidades Médicas (NER)**  
-Identificar automaticamente termos clínicos relevantes como nomes de doenças ("infarto agudo do miocárdio"), medicamentos ("fibrinolíticos", "estatinas"), exames ("ECG", "troponina") e procedimentos ("angioplastia"). Isso permite estruturar informações não estruturadas de prontuários e laudos médicos.
+Identificar automaticamente termos clínicos relevantes como nomes de doenças, medicamentos, exames e procedimentos. Isso permite estruturar informações não estruturadas de prontuários e laudos médicos.
 
 **2. Classificação de Tópicos**  
-Algoritmos de classificação podem categorizar automaticamente trechos dos textos por tema: fatores de risco, sintomas, tratamentos, prognóstico. Útil para organizar e recuperar informações em grandes volumes de literatura médica.
+Algoritmos de classificação podem categorizar automaticamente trechos dos textos por tema: fatores de risco, sintomas, tratamentos, prognóstico.
 
 **3. Análise de Sentimentos e Gravidade Clínica**  
-Modelos de NLP podem inferir o grau de gravidade de condições descritas em textos médicos, distinguindo situações críticas ("parada cardíaca súbita") de condições controladas ("angina estável").
+Modelos de NLP podem inferir o grau de gravidade de condições descritas em textos médicos, distinguindo situações críticas de condições controladas.
 
 **4. Sumarização Automática**  
-Gerar resumos automáticos de artigos e relatórios clínicos extensos, como a Estatística Cardiovascular Brasil 2023, para facilitar a tomada de decisão médica em tempo real.
+Gerar resumos automáticos de artigos e relatórios clínicos extensos para facilitar a tomada de decisão médica em tempo real.
 
 **5. Extração de Sintomas para Triagem**  
-Identificar padrões de sintomas descritos nos textos (dor torácica, dispneia, síncope) e associá-los a diagnósticos — base para um sistema de triagem digital inteligente, que será desenvolvido nas fases futuras do CardioIA.
-
-**Relevância para o CardioIA:** o módulo de NLP do projeto utilizará esses textos como corpus de treinamento para treinar modelos capazes de interpretar textos clínicos, automatizar triagens e apoiar decisões médicas com base em evidências científicas da literatura brasileira.
+Identificar padrões de sintomas descritos nos textos e associá-los a diagnósticos — base para um sistema de triagem digital inteligente nas fases futuras do CardioIA.
 
 ---
 
@@ -179,47 +193,41 @@ Utilizamos o **Chest X-Ray Images (Pneumonia) Dataset**, disponibilizado no **Ka
 
 > Selecionamos exclusivamente imagens da classe **NORMAL** para estabelecer a linha de base que os modelos de Visão Computacional utilizarão para identificar anomalias cardiopulmonares nas fases seguintes do CardioIA.
 
----
-
 ### Como Essas Imagens Podem Ser Analisadas por Visão Computacional
 
 **1. Detecção de Padrões e Anomalias**  
-Redes neurais convolucionais (CNNs) são capazes de identificar padrões visuais sutis em raio-X torácico que indicam alterações cardíacas, como cardiomegalia (aumento do coração), derrame pleural ou congestão pulmonar, sinais frequentes em pacientes com insuficiência cardíaca.
+Redes neurais convolucionais (CNNs) são capazes de identificar padrões visuais sutis em raio-X torácico que indicam alterações cardíacas, como cardiomegalia, derrame pleural ou congestão pulmonar.
 
 **2. Identificação de Bordas e Estruturas Anatômicas**  
-Técnicas de processamento de imagem como detecção de bordas (Canny, Sobel) e segmentação permitem isolar estruturas como o contorno cardíaco, a silhueta pulmonar e o mediastino, auxiliando no cálculo do índice cardiotorácico medida clínica importante para diagnóstico.
+Técnicas como detecção de bordas (Canny, Sobel) e segmentação permitem isolar estruturas como o contorno cardíaco, a silhueta pulmonar e o mediastino, auxiliando no cálculo do índice cardiotorácico.
 
 **3. Classificação Binária Normal vs. Anormal**  
-Com as imagens normais como referência, os modelos poderão ser treinados para classificar automaticamente novas imagens como normais ou suspeitas, acelerando a triagem radiológica em ambientes hospitalares.
+Com as imagens normais como referência, os modelos poderão ser treinados para classificar automaticamente novas imagens como normais ou suspeitas, acelerando a triagem radiológica.
 
 **4. Transfer Learning com Modelos Pré-treinados**  
-Modelos como ResNet, VGG e EfficientNet, pré-treinados em grandes bases de imagens médicas, podem ser ajustados (fine-tuning) com este dataset para criar um classificador cardiológico especializado, mesmo com volume limitado de dados.
+Modelos como ResNet, VGG e EfficientNet podem ser ajustados (fine-tuning) com este dataset para criar um classificador cardiológico especializado.
 
 **5. Apoio ao Diagnóstico Assistido por IA**  
-A análise automatizada de raio-X torácico pode reduzir o tempo de diagnóstico, apoiar radiologistas em regiões com escassez de especialistas e aumentar a consistência das interpretações, impacto direto na qualidade do atendimento cardiológico.
-
-**Relevância para o CardioIA:** este conjunto de imagens será utilizado na Fase 4 do projeto para treinar e avaliar modelos de Visão Computacional capazes de detectar alterações cardiopulmonares em exames de imagem, compondo o módulo de diagnóstico assistido por IA da plataforma.
+A análise automatizada de raio-X torácico pode reduzir o tempo de diagnóstico e apoiar radiologistas em regiões com escassez de especialistas.
 
 ---
 
-## 🔗 Links dos Dados
+## 🔧 Como executar o código
+
+Esta fase não possui código executável — trata-se de coleta, organização e documentação de dados. Os notebooks que consumirão esses dados serão desenvolvidos nas fases seguintes e disponibilizados na pasta `notebooks/`.
+
+Para acessar os dados diretamente:
 
 | Tipo | Descrição | Link |
 |---|---|---|
 | 📊 Numérico | Cleveland Heart Disease Dataset (.csv) | [Google Drive](https://drive.google.com/file/d/1mG9rDA_t4UILysb804DoJHQonTE7ucN7/view?usp=sharing) |
 | 📝 Texto 1 | Estatística Cardiovascular Brasil 2023 (.txt) | [Google Drive](https://drive.google.com/file/d/1zarzA6NWpioNbuoUqtj6N0xe3rk593uP/view?usp=sharing) |
 | 📝 Texto 2 | Infarto do Miocárdio: Sintomas e Mortalidade (.txt) | [Google Drive](https://drive.google.com/file/d/1m0qAG9uen7An9u0OQrfMQPJ6umKEm2pU/view?usp=sharing) |
-| 🖼️ Visual | 234 Raio-X Torácico — Classe NORMAL (.jpeg) | [Google Drive](https://drive.google.com/drive/folders/1QrJ0G5MwkoLYCjvc8q1D?usp=sharing) |
+| 🖼️ Visual | 234 Raio-X Torácico — Classe NORMAL (.jpeg) | [Google Drive](https://drive.google.com/drive/folders/1QrJ0G5MwkoLYCjC2ylIjczYZKjvc8q1D?usp=sharing) |
 
 ---
 
-## 👥 Equipe
+## 🗃 Histórico de lançamentos
 
-| Nome | Função |
-|---|---|
-| Alan Robin Santos RM567437 | Product Owner / Cientista de Dados |
-| Lucas Alberto da Silva Amorim RM567505 | Desenvolvedor / Cientista de Dados |
-
+- 1.0.0 - 02/09/2026 — Entrega da Fase 1: coleta e organização dos dados numéricos, textuais e visuais
 ---
-
-*Projeto acadêmico desenvolvido para o curso de Inteligência Artificial — FIAP, 2025-2026.*
